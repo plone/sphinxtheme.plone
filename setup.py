@@ -40,6 +40,7 @@ setup(
   install_requires=[
       'setuptools',
       # -*- Extra requirements: -*-
+      'Sphinx',
       'docutils',
       'Pygments',
       'roman',
