@@ -6,6 +6,12 @@
 {%- else %}
   {%- set titlesuffix = "" %}
 {%- endif %}
+{% set css_files = css_files + [
+    "_static/css/plone-fonts.css", 
+    "_static/css/font-awesome.css", 
+    "_static/css/bootstrap.css", 
+    ]%}
+{% set script_files = script_files + ["_static/js/bootstrap.js"]%}
 
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
@@ -19,28 +25,22 @@
 
   {# FAVICON #}
   {% if favicon %}
-    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+    <link rel="shortcut icon" href="{{ pathto('static/' + favicon, 1) }}"/>
   {% endif %}
-
-  {# CSS #}
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   {# OPENSEARCH #}
   {% if not embedded %}
     {% if use_opensearch %}
-      <link rel="search" type="application/opensearchdescription+xml" title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}" href="{{ pathto('_static/opensearch.xml', 1) }}"/>
+      <link rel="search" type="application/opensearchdescription+xml" title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}" href="{{ pathto('static/opensearch.xml', 1) }}"/>
     {% endif %}
 
-  {% endif %}
-
-  {# RTD hosts this file, so just load on non RTD builds #}
-  {% if not READTHEDOCS %}
-    <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
   {% endif %}
 
   {% for cssfile in css_files %}
     <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
   {% endfor %}
+
+  <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
 
   {%- block linktags %}
     {%- if hasdoc('about') %}
@@ -75,86 +75,106 @@
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body role="document">
 
-  <div class="wy-grid-for-nav">
+{% include "topbar.html" %}
+{% include "header.html" %}
 
-    {# SIDE NAV, TOGGLES ON MOBILE #}
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-nav-search">
-        <a href="{{ pathto(master_doc) }}" class="fa fa-home"> {{ project }}</a>
-        {% include "searchbox.html" %}
-      </div>
+<div class="breadcrumbs-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        {% include "breadcrumbs.html" %}  
+      </div>      
+    </div>
+  </div>
+</div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        {% set toctree = toctree(maxdepth=2, collapse=False, includehidden=True) %}
-        {% if toctree %}
-            {{ toctree }}
-        {% else %}
-            <!-- Local TOC -->
-            <div class="local-toc">{{ toc }}</div>
-        {% endif %}
-      </div>
-      &nbsp;
-    </nav>
+<div class="master">
+  <div class="container">
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="{{ pathto(master_doc) }}">{{ project }}</a>
-      </nav>
-
-
-      {# PAGE CONTENT #}
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          {% include "breadcrumbs.html" %}
-          <div role="main">
-            {% block body %}{% endblock %}
+    <div class="row">
+    <aside class="col-sm-4 col-lg-2 hidden-xs">
+      <div class="aside-toggle"></div>
+      <div class="sidebarwrapper">
+        {# SIDE NAV, TOGGLES ON MOBILE #}
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+          <div class="wy-side-nav-search">
+            <a href="{{ pathto(master_doc) }}" class="fa fa-home"> {{ project }}</a>
+            {% include "searchbox.html" %}
           </div>
-          {% include "footer.html" %}
+
+          <div data-spy="affix" role="navigation" aria-label="main navigation">
+            {% set toctree = toctree(maxdepth=2, collapse=False, includehidden=True) %}
+            {% if toctree %}
+                {{ toctree }}
+            {% else %}
+                <!-- Local TOC -->
+                <div class="local-toc">{{ toc }}</div>
+            {% endif %}
+          </div>
+          &nbsp;
+        </nav>
+      </div>
+    </aside>
+    <div class="col-xs-12 col-sm-8 col-lg-10 content-column">
+      <div class="row">
+        <div class="col-xs-12" >
+          {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
+          <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+            <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+            <a href="{{ pathto(master_doc) }}">{{ project }}</a>
+          </nav>
         </div>
       </div>
-
-    </section>
-
+        <div class="row">
+        <section role="main" class="col-xs-12">
+          {% block body %}{% endblock %}
+        </section>
+      </div>
+    </div>
+    </div>
   </div>
   {% include "versions.html" %}
+</div>
 
-  {% if not embedded %}
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'{{ url_root }}',
-            VERSION:'{{ release|e }}',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'{{ '' if no_search_suffix else file_suffix }}',
-            HAS_SOURCE:  {{ has_source|lower }}
-        };
-    </script>
-    {%- for scriptfile in script_files %}
-      <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
-    {%- endfor %}
+{% include "footer.html" %}
 
-  {% endif %}
+{% if not embedded %}
 
-  {# RTD hosts this file, so just load on non RTD builds #}
-  {% if not READTHEDOCS %}
-    <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
-  {% endif %}
-
-  {# STICKY NAVIGATION #}
-  {% if theme_sticky_navigation %}
   <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
-      });
+      var DOCUMENTATION_OPTIONS = {
+          URL_ROOT:'{{ url_root }}',
+          VERSION:'{{ release|e }}',
+          COLLAPSE_INDEX:false,
+          FILE_SUFFIX:'{{ '' if no_search_suffix else file_suffix }}',
+          HAS_SOURCE:  {{ has_source|lower }}
+      };
   </script>
-  {% endif %}
+  {%- for scriptfile in script_files %}
+    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+  {%- endfor %}
 
-  {%- block footer %} {% endblock %}
+{% endif %}
+
+{# RTD hosts this file, so just load on non RTD builds #}
+{% if not READTHEDOCS %}
+  <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
+{% endif %}
+
+{# STICKY NAVIGATION #}
+{% if theme_sticky_navigation %}
+<script type="text/javascript">
+    jQuery(function () {
+        SphinxRtdTheme.StickyNav.enable();
+    });
+</script>
+{% endif %}
+
+{%- block footer %}
+
+{% endblock %}
 
 </body>
 </html>
