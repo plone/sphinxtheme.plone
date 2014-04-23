@@ -1,6 +1,7 @@
 /*@import url('default.css');*/
 body {
-    font: 100% Arial, FreeSans, sans-serif;
+    font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+    font-size: 100%;
     background: White;
     color: Black;
 }
@@ -16,7 +17,11 @@ div.body h6 {
     font-weight: bold;
     line-height: 125%;
     border: none;
-    font: "Helvetica Neue",Arial,FreeSans,sans-serif;
+    font-family: "Helvetica Neue",Arial,FreeSans,sans-serif;
+}
+
+section {
+    font-size: 14px;
 }
 
 .hiddenStructure {
@@ -39,49 +44,72 @@ header {
     background-color: #3094C8;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 14%, rgba(0, 0, 0, 0) 14%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 64%, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0));
     background-size: 18px 18px;
+}
+
+footer#doormate {
+    background-color: #3094C8;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 14%, rgba(0, 0, 0, 0) 14%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 64%, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0));
+    background-size: 18px 18px;
+}
+
+header {
     height: 89px;
 }
 
 header a {
+    /*
     margin-top: 22px;
     margin-bottom: 22px;
+    */
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 0;
     display: inline-block;
 }
 
+header a span {
+    display: block;
+    color: #FFF;
+    font-size: 24px;
+}
 
-footer {
+
+
+footer#colophon {
     background: none repeat scroll 0 0 #EAF2F6;
     box-shadow: 0 8px 12px -12px rgba(0, 0, 0, 0.5) inset;
     padding-top: 1em;
 }
 
-footer .colophon p {
+footer#colophon p {
     margin-bottom: 2px;
 }
 
-footer .colophon p {
+footer#colophon p {
 
-    font-family: 'DINRegular';
-    /*font-family: "Helvetica Neue",​Helvetica,​Arial,​sans-serif;*/
+    /*font-family: 'DINRegular';*/
+    font-family: "Helvetica Neue",​Helvetica,​Arial,​sans-serif;
     font-size: 11px;
 }
 
-footer nav#sitemap {
+footer#doormate nav {
     margin-top: 1em;
     margin-bottom: 1em;
+    color: #FFF;
 }
 
-footer nav#sitemap ul {
+footer#doormate nav ul {
     list-style-type: none;
+    margin-bottom: 0;
 }
 
-footer nav#sitemap a {
-    font-size: 11px;
+footer#doormate nav a {
+    font-size: 12px;
+    color: #FFF;
 }
 
 div.document {
-    background-color: White;
+    background-color: #FFF;
 }
 
 a:link, a:visited {
@@ -94,16 +122,64 @@ a:visited:hover {
     color: #75ad0a;
 }
 
-.master > .container > .row {
-    background: none repeat scroll 0 0 #EAF2F6;
+div.breadcrumbs-container li,
+div.breadcrumbs-container a,
+div.breadcrumbs-container .btn {
+    font-size: 12px;
 }
 
-aside {
-    background: none repeat scroll 0 0 #EAF2F6;
-    /*box-shadow: 0 8px 12px -12px rgba(0, 0, 0, 0.5) inset;*/
+div.breadcrumbs-container ul,
+div.breadcrumbs-container ul.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+    list-style-type: none;
+    padding-left: 0;
 }
 
+div.breadcrumbs-container ul li {
+    display: inline-block;
+}
 
-.master > .container > .row > div.content-column {
-    background-color: #FFF;
+div.breadcrumbs-container div.container div.row div {
+    padding-left: 0;
+}
+
+.breadcrumb > li + li:before {
+    padding: 0 2px;
+}
+
+div.sidebarwrapper {
+    font-size: 12px;
+}
+
+div.sidebarwrapper ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+
+}
+div.sidebarwrapper ul ul {
+    list-style-type: none;
+    padding-left: 20px;
+    
+}
+
+div.sidebarwrapper li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h1 a.headerlink,
+h2 a.headerlink,
+h3 a.headerlink {
+    display: none;
+}
+h1:hover a.headerlink,
+h2:hover a.headerlink,
+h3:hover a.headerlink {
+    display: inline-block;
+}
+
+section h1:first-child {
+    margin-top: 0;
 }

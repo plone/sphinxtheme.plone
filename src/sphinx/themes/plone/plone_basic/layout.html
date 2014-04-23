@@ -9,13 +9,13 @@
 {% set css_files = css_files + [
     "_static/css/plone-fonts.css", 
     "_static/css/font-awesome.css", 
-    "_static/css/bootstrap.css", 
+    "_static/css/bootstrap.min.css", 
     ]%}
-{% set script_files = script_files + ["_static/js/bootstrap.js"]%}
+{% set script_files = script_files + ["_static/js/bootstrap.min.js"]%}
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"  {% if language %} lang="{{language}}" {% else %} lang="en" {% endif %}  > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" {% if language %} lang="{{language}}" {% else %} lang="en" {% endif %} > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +71,7 @@
   {%- block extrahead %} {% endblock %}
 
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  {#<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>#}
 
 </head>
 
@@ -80,32 +80,27 @@
 {% include "topbar.html" %}
 {% include "header.html" %}
 
-<div class="breadcrumbs-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        {% include "breadcrumbs.html" %}  
-      </div>      
-    </div>
-  </div>
-</div>
+{% include "breadcrumbs.html" %}  
+
 
 <div class="master">
   <div class="container">
 
     <div class="row">
-    <aside class="col-sm-4 col-lg-2 hidden-xs">
+    <aside class="col-sm-4 col-lg-3 hidden-xs">
       <div class="aside-toggle"></div>
       <div class="sidebarwrapper">
         {# SIDE NAV, TOGGLES ON MOBILE #}
-        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-          <div class="wy-side-nav-search">
+        <nav data-toggle="nav-shift" class="nav-side">
+          {% if searchbox %}
+          <div class="side-nav-search">
             <a href="{{ pathto(master_doc) }}" class="fa fa-home"> {{ project }}</a>
             {% include "searchbox.html" %}
           </div>
+          {% endif %}
 
-          <div data-spy="affix" role="navigation" aria-label="main navigation">
-            {% set toctree = toctree(maxdepth=2, collapse=False, includehidden=True) %}
+          <div role="navigation" aria-label="navigation">
+            {% set toctree = toctree(maxdepth=-1, collapse=True, includehidden=True) %}
             {% if toctree %}
                 {{ toctree }}
             {% else %}
@@ -113,21 +108,20 @@
                 <div class="local-toc">{{ toc }}</div>
             {% endif %}
           </div>
-          &nbsp;
         </nav>
       </div>
     </aside>
-    <div class="col-xs-12 col-sm-8 col-lg-10 content-column">
-      <div class="row">
+    <div class="col-xs-12 col-sm-8 col-lg-9 content-column">
+      <div class="row visible-xs">
         <div class="col-xs-12" >
           {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
           <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
             <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-            <a href="{{ pathto(master_doc) }}">{{ project }}</a>
+            <a href="{{ pathto(master_doc) }}">Table Of Content</a>
           </nav>
         </div>
       </div>
-        <div class="row">
+      <div class="row">
         <section role="main" class="col-xs-12">
           {% block body %}{% endblock %}
         </section>
@@ -138,6 +132,7 @@
   {% include "versions.html" %}
 </div>
 
+{% include "breadcrumbs.html" %}  
 
 {% include "footer.html" %}
 
