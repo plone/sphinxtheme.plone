@@ -43,18 +43,18 @@
 
       {% if next or prev %}
       <div class="rst-buttons col-xs-2" role="navigation" >
-        <ul>
-        {% if prev %}
-          <li><a href="{{ prev.link|e }}" class="btn btn-neutral" title="{{ prev.title|striptags|e }}"><span class="fa fa-arrow-circle-left"></span> Previous</a></li>
-        {% endif %}
-        {% if next %}
-          <li><a href="{{ next.link|e }}" class="btn btn-neutral float-right" title="{{ next.title|striptags|e }}">Next <span class="fa fa-arrow-circle-right"></span></a></li>
-        {% endif %}
-        </ul>
+        <div role="navigation" aria-label="breadcrumbs navigation">
+          <ul class="breadcrumb">
+          {% if prev %}
+            <li><a href="{{ prev.link|e }}" title="{{ prev.title|striptags|e }}"><span class="fa fa-arrow-circle-left"></span> Previous</a></li>
+          {% endif %}
+          {% if next %}
+            <li><a href="{{ next.link|e }}" title="{{ next.title|striptags|e }}">Next <span class="fa fa-arrow-circle-right"></span></a></li>
+          {% endif %}
+          </ul>
+        </div>
       </div>
       {% endif %}
-
-
     </div>
   </div>
 </div>
