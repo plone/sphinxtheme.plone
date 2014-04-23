@@ -156,6 +156,11 @@ div.breadcrumbs-container div.container div.row div {
     padding: 0 2px;
 }
 
+aside {
+    background-color: #F6F6F6;
+    border: 1px solid #EEEEEE;
+}
+
 div.sidebarwrapper {
     font-size: 12px;
 }
