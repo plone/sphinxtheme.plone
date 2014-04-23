@@ -43,9 +43,6 @@ setup(
       'Sphinx',
       'docutils',
       'Pygments',
-      'roman',
-      'collective.sphinx.autoatschema',
-      'sphinxcontrib.contributors',
   ],
   entry_points="""
   # -*- Entry points: -*-

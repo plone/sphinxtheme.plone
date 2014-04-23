@@ -31,7 +31,7 @@ Installation from PyPI_ is fairly straightforward:
 		    recipe=zc.recipe.egg
 		    eggs=
 		        Sphinx
-		        sphinx.plonetheme
+		        sphinx.themes.plone
 
 2. Edit the "conf.py" configuration file to point to the plone themes::
 
@@ -41,17 +41,6 @@ Installation from PyPI_ is fairly straightforward:
       # ...
 
       # Activate the theme.
-      html_theme = 'bootstrap'
+      html_theme = 'plone_org_4'
       html_theme_path = sphinx.themes.plone.get_html_theme_path()
 
-
-		extensions = ['sphinxjp.themecore']
-		html_theme = 'plonetheme'
-		# Opensearch support with Plone icon
-		html_use_opensearch = 'http://my.site.tld/mydoc'
-		...
-		# Have a disqus setting for this site to have visitors feedback?
-		# (register at http://disqus.com/)
-		html_theme_options = {
-		  'disqus_name': 'the_disqus_site_shortname'
-		}
