@@ -7,18 +7,20 @@
             <li><a href="http://plone.org">Plone</a></li>
             <li class="master">
               <span class="version_switcher_placeholder">
-              <select>
+              <label>Version
+              <select id="versionpicker">
               {% for vers in version %}
                 <option value="{{vers}}" {% if vers == release %}selected="selected" {% endif %}>{{vers}}</option>
               {% endfor %}
-              </select>
+              </select></label>
               </span>
               <span class="lang_switcher_placeholder">
+              <label>Language
               <select>
               {% for lang in languages %}
                 <option value="{{lang.lang_code}}" {% if lang.lang_code == language %}selected="selected" {% endif %}>{{lang.lang_name}}</option>
               {% endfor %}
-              </select>
+              </select></label>
               </span>
               <a href="{{ pathto(master_doc) }}">Documentation</a>
             </li>
@@ -38,8 +40,8 @@
             </li>
             -->
           </ul>
-        </div> 
-      </div>  
+        </div>
+      </div>
 
       {% if next or prev %}
       <div class="rst-buttons col-xs-2" role="navigation" >
