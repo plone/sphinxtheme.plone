@@ -1,9 +1,4 @@
-{% set doormat = True %}
-{% set colophon = True %}
-{% set trademark_logo = 'plone.svg' %}
-{% set trademark_name = 'Plone' %}
-
-{% if doormat %}
+{% if theme_doormat %}
 <footer id="doormat">
   <div class="container">
       {% include "doormat.html" %}
@@ -11,7 +6,7 @@
 </footer>
 {% endif %}
 
-{% if colophon %}
+{% if theme_colophon %}
 <footer id="colophon">
   <div class="container">
     <div class="row">
