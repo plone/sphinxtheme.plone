@@ -23,7 +23,7 @@
           <ul class="breadcrumb">
             <li><a href="http://plone.org">Plone</a></li>
             <li class="master">
-              {% if version_selector %}
+              {% if theme_version_switcher and version|length > 1 %}
                 <span class="version_switcher_placeholder">
                   <label for="versionpicker-{{name}}">Version</label>
                   <select id="versionpicker-{{name}}">
@@ -33,12 +33,12 @@
                   </select>
                 </span>
               {% endif %}
-              {% if lang_selector %}
+              {% if theme_language_switcher and theme_doc_languages|length > 1 %}
                 <span class="lang_switcher_placeholder">
                   <label for="languagepicker-{{name}}">Language</label>
                   <select id="languagepicker-{{name}}">
-                  {% for lang in languages %}
-                    <option value="{{lang.lang_code}}" {% if lang.lang_code == language %}selected="selected" {% endif %}>{{lang.lang_name}}</option>
+                  {% for lang in theme_doc_languages %}
+                    <option value="{{lang.lang_code}}" {% if lang.lang_code == theme_doc_language %}selected="selected" {% endif %}>{{lang.lang_name}}</option>
                   {% endfor %}
                   </select>
                 </span>
@@ -249,4 +249,3 @@
 
 </body>
 </html>
-

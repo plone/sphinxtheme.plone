@@ -68,6 +68,7 @@ footer#colophon {
     background: none repeat scroll 0 0 #3C9ACB;
     box-shadow: 0 8px 12px -12px rgba(0, 0, 0, 0.5) inset;
     padding-top: 1em;
+    padding-bottom: 1em;
     color: #FFF;
 }
 
