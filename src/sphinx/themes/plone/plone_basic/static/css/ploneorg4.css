@@ -64,6 +64,11 @@ header a span {
     font-size: 24px;
 }
 
+header form#rtd-search-form {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
 footer#colophon {
     background: none repeat scroll 0 0 #3C9ACB;
     box-shadow: 0 8px 12px -12px rgba(0, 0, 0, 0.5) inset;

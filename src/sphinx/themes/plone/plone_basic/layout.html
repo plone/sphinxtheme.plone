@@ -23,7 +23,7 @@
       <div class="col-xs-10">
         <div role="navigation" aria-label="breadcrumbs navigation">
           <ul class="breadcrumb">
-            <li><a href="http://plone.org">Plone</a></li>
+            {#<li><a href="http://plone.org">Plone</a></li>#}
             <li class="master">
               {% if theme_version_switcher and version|length > 1 %}
                 <span class="version_switcher_placeholder">
@@ -173,13 +173,6 @@
       <div class="sidebarwrapper">
         {# SIDE NAV, TOGGLES ON MOBILE #}
         <nav data-toggle="nav-shift" class="nav-side">
-          {% if theme_searchbox %}
-          <div class="side-nav-search">
-            <a href="{{ pathto(master_doc) }}" class="fa fa-home"> {{ project }}</a>
-            {% include "searchbox.html" %}
-          </div>
-          {% endif %}
-
           <div role="navigation" aria-label="navigation">
             {% set toctree = toctree(maxdepth=-1, collapse=True, includehidden=True) %}
             {% if toctree %}

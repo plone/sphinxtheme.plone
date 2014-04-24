@@ -1,9 +1,16 @@
 {% block header %}
 <header role="banner" id="banner">
   <div class="container">
-    <a href="{{url_root}}" accesskey="1" title="Website" id="portal-logo">
-      <img class="logo" src="{{ pathto('_static' + theme_logo, 1) }}" alt="Plone" ><span>{{theme_logo_additional_text}}</span>
-    </a>
+  	<div class="col-xs-4">
+	    <a href="{{url_root}}" accesskey="1" title="Website" id="portal-logo">
+	      <img class="logo" src="{{ pathto('_static' + theme_logo, 1) }}" alt="Plone" ><span>{{theme_logo_additional_text}}</span>
+	    </a>
+    </div>
+    <div class="col-xs-2 col-xs-offset-6">
+	  {% if theme_searchbox %}
+        {% include "searchbox.html" %}
+      {% endif %}
+    </div>
   </div>
 </header>
 {% endblock %}
