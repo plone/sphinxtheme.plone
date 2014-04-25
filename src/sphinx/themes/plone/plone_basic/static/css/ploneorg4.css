@@ -1,4 +1,7 @@
 /*@import url('default.css');*/
+@import url('../basic.css');
+@import url('admonition.css');
+
 body {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     font-size: 100%;
@@ -269,3 +272,4 @@ div.aside-toggle {
 
 }
 */
+

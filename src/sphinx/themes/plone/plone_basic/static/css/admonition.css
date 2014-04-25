@@ -1,0 +1,109 @@
+div.admonition p.admonition-title + p {
+    display: inline;
+}
+div.highlight {
+    background-color: #FFFFFF;
+}
+div.note {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../img/dialog-note.png") no-repeat scroll 10px 8px #D9EDF7;
+    border-color: #BCE8F1;
+    border-image: none;
+    border-style: solid none;
+    border-width: 2px;
+    padding: 10px 20px 10px 60px;
+}
+
+div.note * {
+    color: #31709F;
+}
+
+div.seealso {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../img/dialog-seealso.png") no-repeat scroll 10px 8px #DFF0D8;
+    border-color: #D6E9C6;
+    border-image: none;
+    border-style: solid none;
+    border-width: 2px;
+    padding: 10px 20px 10px 60px;
+}
+
+div.seealso * {
+    color: #3C763D;
+}
+
+div.topic {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #C6C9CB;
+    border-image: none;
+    border-style: solid none;
+    border-width: 2px;
+    padding: 10px 20px;
+}
+
+div.error {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../img/dialog-warning.png") no-repeat scroll 10px 8px #F2DEDE;
+    border-color: #EBCCD1;
+    border-image: none;
+    border-style: solid none;
+    border-width: 2px;
+    padding: 10px 20px 10px 60px;
+}
+div.error * {
+    color: #A94442;
+}
+
+div.warning {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../img/dialog-warning.png") no-repeat scroll 10px 8px #FCF8E3;
+    border-color: #FAEBCC;
+    border-image: none;
+    border-style: solid none;
+    border-width: 2px;
+    padding: 10px 20px 10px 60px;
+}
+
+div.warning * {
+    color: #8A6D3B;
+}
+
+div.admonition-todo {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../img/dialog-todo.png") no-repeat scroll 10px 8px #DFF0D8;
+    border-color: #D6E9C6;
+    border-image: none;
+    border-style: solid none;
+    border-width: 2px;
+    padding: 10px 20px 10px 60px;
+}
+
+div.admonition-todo * {
+    color: #3C763D;
+}
+
+p.admonition-title {
+    display: none;
+}
+p.admonition-title:after {
+    content: ":";
+}
