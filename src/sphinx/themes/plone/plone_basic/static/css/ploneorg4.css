@@ -245,6 +245,7 @@ section h1:first-child {
 
 
 div.aside-toggle {
+    display: none;
     background-color: #EEEEEE;
     float: right;
     margin-top: 0;
