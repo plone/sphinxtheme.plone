@@ -22,7 +22,7 @@ div.note {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    background: url("../img/dialog-note.png") no-repeat scroll 10px 8px #D9EDF7;
+    background: url("../img/dialog-note.png") no-repeat scroll 10px 8px #D9FFFF;
     border-color: #BCE8F1;
     border-image: none;
     border-style: solid none;
@@ -51,7 +51,7 @@ div.seealso * {
     color: #3C763D;
 }
 
-div.topic { 
+div.topic {
     /*used for table of contents*/
     /*
     -moz-border-bottom-colors: none;

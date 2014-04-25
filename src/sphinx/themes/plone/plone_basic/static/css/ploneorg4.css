@@ -263,9 +263,12 @@ div.aside-toggle {
 
 div.aside-toggle:hover {
     background-color: #F6F6F6;
-    
+
 }
 
+.wy-form label {
+    display: none;
+}
 /*
 div.aside-toggle {
     height: 300px;
