@@ -20,7 +20,7 @@
 <div class="breadcrumbs-container" id="breadcrumbs-{{name}}">
   <div class="container">
     <div class="row">
-      <div class="col-xs-10">
+      <div class="col-xs-9">
         <div role="navigation" aria-label="breadcrumbs navigation">
           <ul class="breadcrumb">
             {#<li><a href="http://plone.org">Plone</a></li>#}
@@ -67,7 +67,7 @@
       </div>
 
       {% if next or prev %}
-      <div class="rst-buttons col-xs-2" role="navigation" >
+      <div class="rst-buttons col-xs-3" role="navigation" >
         <div role="navigation" aria-label="breadcrumbs navigation">
           <ul class="breadcrumb">
           {% if prev %}
@@ -189,8 +189,8 @@
       <div class="row visible-xs">
         <div class="col-xs-12" >
           {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
-          <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-            <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <nav class="nav-top" role="navigation" aria-label="top navigation">
+            <i data-toggle="nav-top" class="fa fa-bars"></i>
             <a href="{{ pathto(master_doc) }}">Table Of Content</a>
           </nav>
         </div>
@@ -206,7 +206,7 @@
   {% include "versions.html" %}
 </div>
 
-{{breadcrumb('bottom')}}
+{{breadcrumb('bottom', True, True)}}
 
 {% include "footer.html" %}
 
@@ -221,11 +221,13 @@
           HAS_SOURCE:  {{ has_source|lower }}
       };
   </script>
+
   {%- for scriptfile in script_files %}
     <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
   {%- endfor %}
 
-{% endif %}cc
+{% endif %}
+
 {# STICKY NAVIGATION #}
 {% if theme_sticky_navigation %}
 <script type="text/javascript">

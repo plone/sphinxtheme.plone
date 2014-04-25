@@ -42,8 +42,9 @@ div#topbar.navbar {
 
 header {
     border-top: 11px solid #3C9ACB;
-    height: 89px;
-    margin-bottom: 10px;
+    /*height: 89px;*/
+    height: auto;
+    /*margin-bottom: 10px;*/
 }
 
 
@@ -66,9 +67,21 @@ header a span {
 
 header form#rtd-search-form {
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 75px;
+    text-align: right;
 }
 
+@media(max-width: 768px) {
+    header form#rtd-search-form {
+        line-height: 1em;
+    }
+
+    footer#doormat div.clearfix {
+        margin-bottom: 5px;
+    }
+}
 footer#colophon {
     background: none repeat scroll 0 0 #3C9ACB;
     box-shadow: 0 8px 12px -12px rgba(0, 0, 0, 0.5) inset;
@@ -102,6 +115,7 @@ footer#doormat nav {
 footer#doormat nav ul {
     list-style-type: none;
     margin-bottom: 0;
+    margin-top: 0.5em;
 }
 
 footer#doormat nav a {
@@ -126,6 +140,11 @@ a:visited:hover {
 div.breadcrumbs-container {
     margin-bottom: 10px;
 }
+
+div.breadcrumbs-container#breadcrumbs-bottom {
+    margin-top: 10px;
+}
+
 div.breadcrumbs-container div.container {
     background: linear-gradient(#EAF2F6, #DEDEDE);
     background-repeat: no-repeat;
@@ -147,6 +166,14 @@ div.breadcrumbs-container ul.breadcrumb {
     margin-bottom: 0;
     list-style-type: none;
     padding-left: 15px;
+}
+
+div.breadcrumbs-container div.rst-buttons ul {
+    float: right;
+}
+
+div.breadcrumbs-container div.rst-buttons a {
+    white-space: nowrap;
 }
 
 div.breadcrumbs-container ul li {
