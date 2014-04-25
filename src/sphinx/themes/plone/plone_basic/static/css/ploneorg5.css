@@ -180,6 +180,7 @@ h3:hover a.headerlink {
     display: inline-block;
 }
 
+section h1:nth-of-type(1),
 section h1:first-child {
     margin-top: 0;
 }
