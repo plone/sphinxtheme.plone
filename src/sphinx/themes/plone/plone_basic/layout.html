@@ -169,7 +169,7 @@
 
     <div class="row">
     <aside class="col-sm-4 col-lg-3 hidden-xs">
-      <div class="aside-toggle"></div>
+      <div class="aside-toggle glyphicon glyphicon-chevron-left"></div>
       <div class="sidebarwrapper">
         {# SIDE NAV, TOGGLES ON MOBILE #}
         <nav data-toggle="nav-shift" class="nav-side">
@@ -229,6 +229,7 @@
 {% endif %}
 
 {# STICKY NAVIGATION #}
+{#
 {% if theme_sticky_navigation %}
 <script type="text/javascript">
     jQuery(function () {
@@ -236,6 +237,7 @@
     });
 </script>
 {% endif %}
+#}
 
 {%- block footer %}
 
