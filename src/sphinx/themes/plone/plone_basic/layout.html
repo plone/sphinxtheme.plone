@@ -102,8 +102,10 @@
   {% endblock %}
 
   {# FAVICON #}
-  {% if favicon %}
-    <link rel="shortcut icon" href="{{ pathto('static/' + favicon, 1) }}"/>
+  {% if theme_favicon %}
+    <link rel="icon" href="{{ pathto('_static/' + theme_favicon, 1) }}" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ pathto('_static/' + theme_favicon, 1) }}" />
+    <link type="image/x-icon" href="{{ pathto('_static/' + theme_favicon, 1) }}" />
   {% endif %}
 
   <script type="text/javascript" src="{{ pathto('_static/jquery.js', 1) }}"></script>
