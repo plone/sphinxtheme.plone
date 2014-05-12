@@ -1,0 +1,10 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Plone</ShortName>
+<Description>Plone Search</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Image width="16" height="16" type="image/x-icon">https://plone.org/favicon.ico</Image>
+<Url type="text/html" method="GET" template="http://docs.plone.org/search.html">
+  <Param name="q" value="{searchTerms}"/>
+  </Url>
+<SearchForm>http://docs.plone.org/</SearchForm>
+</SearchPlugin>
