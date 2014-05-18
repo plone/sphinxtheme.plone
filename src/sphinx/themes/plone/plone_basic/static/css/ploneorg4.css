@@ -269,6 +269,13 @@ div.aside-toggle:hover {
 .wy-form label {
     display: none;
 }
+
+blockquote {
+    border-left: none;
+    font-size: 14px;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
 /*
 div.aside-toggle {
     height: 300px;
