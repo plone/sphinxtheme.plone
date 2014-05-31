@@ -11,7 +11,7 @@ This package is a collection of sphinx themes for the plone documentation.
 Setup
 =====
 
-Installation from PyPI_ is fairly straightforward:
+
 
 1. Install the package::
 
