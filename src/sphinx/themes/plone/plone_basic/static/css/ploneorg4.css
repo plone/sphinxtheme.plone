@@ -131,6 +131,11 @@ footer#doormat nav a {
     color: #205C90;
 }
 
+div.ga-footer {
+    height: 0px;
+    display: none;
+}
+
 div.document {
     background-color: #FFF;
 }
@@ -245,7 +250,6 @@ section h1:first-child {
 .lang_switcher_placeholder label {
     display: none;
 }
-
 
 div.aside-toggle {
     background-color: #EEEEEE;
