@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.0.1dev'
+version = '0.1.0'
 
 setup(
   name='sphinx.themes.plone',
@@ -13,23 +13,20 @@ setup(
   # Get more strings from
   # http://pypi.python.org/pypi?:action=list_classifiers
   classifiers=[
-    'Programming Language :: Python',
-    'Framework :: Sphinx', 
+    'Programming Language :: Python', 
     'Framework :: Plone',       
     'License :: OSI Approved :: GNU General Public License (GPL)',
     'Topic :: Software Development :: Documentation',
     'Operating System :: OS Independent',
-    #'Development Status :: 5 - Production/Stable',
-    'Development Status :: 1 - Planning',
+    'Development Status :: 5 - Production/Stable',
     'Environment :: Web Environment',
     'Intended Audience :: Developers',
-    'Intended Audience :: System Administrators',
     ],
   keywords='sphinx plone themes',
-  #author='Alexander Loechel on behalf of Plone Foundation',
-  #author_email='Alexander.Loechel@lmu.de',
   author='Plone Foundation',
   author_email='plone-developers@lists.sourceforge.net',
+  maintainer='Alexander Loechel on behalf of Plone Foundation',
+  maintainer_email='Alexander.Loechel@lmu.de',
   url='https://github.com/plone/sphinx.themes.plone.git',
   license='GPL',
   packages=find_packages('src',exclude=['ez_setup']),

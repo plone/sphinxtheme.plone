@@ -1,6 +1,6 @@
-=====================================
+======================================
  Sphinx Themes for Plone Documentation
-=====================================
+======================================
 
 Introduction
 ============
@@ -13,34 +13,49 @@ Setup
 
 
 
-1. Install the package::
+#. Install the package:
 
-	  $ easy_install sphinx.themes.plone
+    #. using easy_install::
 
-	  or
+        $ easy_install sphinx.themes.plone
 
-      $ pip install sphinx.themes.plone
+    #. using pip::
 
-      or using buildout::
+        $ pip install sphinx.themes.plone
 
-            [buildout]
-		    parts=
-		        sphinx
-		    
-		    [sphinx]
-		    recipe=zc.recipe.egg
-		    eggs=
-		        Sphinx
-		        sphinx.themes.plone
+    #. using buildout::
 
-2. Edit the "conf.py" configuration file to point to the plone themes::
+        [buildout]
+        parts=
+            sphinx
+        
+        [sphinx]
+        recipe=zc.recipe.egg
+        eggs=
+            Sphinx
+            sphinx.themes.plone
 
-      # At the top.
-      import sphinx.themes.plone
 
-      # ...
+#. Edit the "conf.py" configuration file to point to the plone themes::
 
-      # Activate the theme.
+    # At the top.
+    import sphinx.themes.plone
+
+    # ...
+
+    # Activate the theme path:
+    html_theme_path = sphinx.themes.plone.get_html_theme_path()
+
+
+#. Select a Plone theme::
+
+      # Activate the theme like this:
       html_theme = 'plone_org_4'
-      html_theme_path = sphinx.themes.plone.get_html_theme_path()
 
+Avaliable Themes:
+-----------------
+
+* plone_org_4
+* plone_org_5 (TODO: to be finialized)
+* plone_classic (TODO: to be implemented)
+* plone_sunburst (TODO: to be implemented)
