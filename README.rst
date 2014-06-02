@@ -13,7 +13,7 @@ Features
 Installation
 ------------
 
-Install sphinx.themes.plone with pip:
+Install sphinx.themes.plone with pip::
 
     pip install sphinx.themes.plone
 
