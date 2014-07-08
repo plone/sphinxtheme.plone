@@ -242,21 +242,7 @@
 
 {%- if theme_use_ga %}
 <div class="footer ga-footer">This page uses <a href="http://analytics.google.com/"> Google Analytics</a> to collect statistics. You can disable it by blocking the JavaScript coming from www.google-analytics.com.
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '{{ theme_googleanalytics_id }}']);
-    _gaq.push(['_setCookiePath', '{{ theme_googleanalytics_path }}']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-    var ga = document.createElement('script'); 
-    ga.setAttribute('type', 'text/javascript'); 
-    ga.setAttribute('async', 'true');
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })(); 
-
-  </script>
+  <script type="text/javascript" src="{{pathto('_static/ga.js',true)|e}}"></script>
 </div>
 {%- endif %}
 {% endblock %}
