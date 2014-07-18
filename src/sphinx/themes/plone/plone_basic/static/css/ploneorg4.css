@@ -280,6 +280,11 @@ blockquote {
     padding: 0;
     margin: 0 0 1em 0;
 }
+
+a .current .reference .internal {
+    font-weight: bold;
+}
+
 /*
 div.aside-toggle {
     height: 300px;
