@@ -281,7 +281,7 @@ blockquote {
     margin: 0 0 1em 0;
 }
 
-a .current.reference.internal {
+a.current.reference.internal {
     font-weight: bold;
 }
 
