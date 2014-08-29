@@ -4,11 +4,13 @@ Sphinx Themes for Plone Documentation
 
 sphinx.themes.plone is a collection of `Sphinx`_ themes for the `Plone`_ documentation project.
 
+The different themes are used on `docs.plone.org`_.
+
 
 Features
 --------
 
-- sphinx.themes.plone comes with own themes for Plone 3, Plone4 and Plone 5
+- sphinx.themes.plone comes with own themes for Plone 3, Plone 4 and Plone 5
 
 Installation
 ------------
@@ -68,3 +70,4 @@ The project is licensed under the GPLv2 license.
 
 .. _Sphinx: http://sphinx-doc.org/
 .. _Plone: http://plone.org
+.. _docs.plone.org: http://docs.plone.org
