@@ -1,186 +1,55 @@
-/*@import url('default.css');*/
-body {
-    font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
-    font-size: 100%;
-    background: White;
-    color: Black;
-}
-
-div.body h1,
-div.body h2,
-div.body h3,
-div.body h4,
-div.body h5,
-div.body h6 {
-    color: Black;
-    background-color: White;
-    font-weight: bold;
-    line-height: 125%;
-    border: none;
-    font-family: "Helvetica Neue",Arial,FreeSans,sans-serif;
-}
-
-section {
-    font-size: 14px;
-}
-
-.hiddenStructure {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: medium none;
-    display: block;
-    height: 0.1em;
-    margin: -0.1em 0 0 -0.1em;
-    overflow: hidden;
-    padding: 0;
-    width: 1px;
-}
-div#topbar.navbar {
-    margin-bottom: 0;
-    height:40px;
-    min-height: 40px;
-}
+@import url('plone_basic.css');
 
 header {
+    border-top-width: 11px;
+    border-top-style: solid;
+    border-top-color: linear-gradient(to bottom, #333333 0%, #101010 100%);
+
     background-color: #3094C8;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 14%, rgba(0, 0, 0, 0) 14%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 64%, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0));
     background-size: 18px 18px;
-}
-
-footer#doormat {
-    background-color: #3094C8;
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 14%, rgba(0, 0, 0, 0) 14%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 64%, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0));
-    background-size: 18px 18px;
-}
-
-header {
-    height: 89px;
-}
-
-header a {
-    /*
-    margin-top: 22px;
-    margin-bottom: 22px;
-    */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0;
-    display: inline-block;
+    margin-bottom: 1em;
 }
 
 header a span {
-    display: block;
     color: #FFF;
     font-size: 24px;
 }
 
-
-
 footer#colophon {
-    background: none repeat scroll 0 0 #EAF2F6;
+    background: none repeat scroll 0 0 #3C9ACB;
     box-shadow: 0 8px 12px -12px rgba(0, 0, 0, 0.5) inset;
     padding-top: 1em;
-}
-
-footer#colophon p {
-    margin-bottom: 2px;
-}
-
-footer#colophon p {
-
-    /*font-family: 'DINRegular';*/
-    font-family: "Helvetica Neue",​Helvetica,​Arial,​sans-serif;
-    font-size: 11px;
-}
-
-footer#doormat nav {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    padding-bottom: 1em;
     color: #FFF;
 }
 
-footer#doormat nav ul {
-    list-style-type: none;
-    margin-bottom: 0;
+footer#doormat {
+    background-color: #EAF2F6;
+    box-shadow: 0 8px 12px -12px rgba(0, 0, 0, 0.5) inset;
+    background-size: 18px 18px;
+}
+
+footer#doormat nav {
+    color: #205C90;
 }
 
 footer#doormat nav a {
     font-size: 12px;
-    color: #FFF;
+    color: #205C90;
 }
 
-div.document {
-    background-color: #FFF;
+div.breadcrumbs-container div.container {
+    background: linear-gradient(#EAF2F6, #DEDEDE);
+    background-repeat: no-repeat;
+    border-color: #DEDEDE #DEDEDE #A3A3A3;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
 }
 
-a:link, a:visited {
-    color: #205c90;
-    text-decoration: none;
-}
-
-a:link:hover,
-a:visited:hover {
-    color: #75ad0a;
-}
-
-div.breadcrumbs-container li,
-div.breadcrumbs-container a,
-div.breadcrumbs-container .btn {
-    font-size: 12px;
-}
-
-div.breadcrumbs-container ul,
-div.breadcrumbs-container ul.breadcrumb {
-    background-color: transparent;
-    margin-bottom: 0;
-    list-style-type: none;
-    padding-left: 0;
-}
-
-div.breadcrumbs-container ul li {
-    display: inline-block;
-}
-
-div.breadcrumbs-container div.container div.row div {
-    padding-left: 0;
-}
-
-.breadcrumb > li + li:before {
-    padding: 0 2px;
-}
-
-div.sidebarwrapper {
-    font-size: 12px;
-}
-
-div.sidebarwrapper ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 0;
-
-}
-div.sidebarwrapper ul ul {
-    list-style-type: none;
-    padding-left: 20px;
-
-}
-
-div.sidebarwrapper li {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-h1 a.headerlink,
-h2 a.headerlink,
-h3 a.headerlink {
-    display: none;
-}
-h1:hover a.headerlink,
-h2:hover a.headerlink,
-h3:hover a.headerlink {
-    display: inline-block;
-}
-
-section h1:nth-of-type(1),
-section h1:first-child {
-    margin-top: 0;
+aside {
+    background-color: #F6F6F6;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
 }
