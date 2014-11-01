@@ -283,3 +283,54 @@ blockquote {
 a.current.reference.internal {
     font-weight: bold;
 }
+
+img {
+    margin-bottom: 1.25em;
+}
+
+.master .container {
+    margin-top: 1.5em;
+}
+
+div.sidebarwrapper ul {
+    margin-bottom: 0em;
+}
+
+div.sidebarwrapper li {
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+}
+
+.nav-side a {
+    display: block;
+    font-size: 120%;
+    padding: 0.25em 0;
+}
+
+div.admonition-description, div.admonition {
+    border-style: solid none;
+    border-width: 1px;
+    margin-bottom: 0.5em;
+}
+
+.fa-arrow-circle-left:before {
+    margin-right: 0.2em;
+}
+
+.fa-arrow-circle-right:before {
+    margin-left: 0.2em;
+}
+
+footer#doormat nav {
+    margin-top: 1.5em;
+}
+
+footer#doormat nav div {
+    color: #000;
+    font-size: 120%;
+    line-height: 0.5em;
+}
+
+footer#doormat nav a {
+    line-height: 1.5em;
+}
