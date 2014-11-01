@@ -1,12 +1,22 @@
+/**
+ * Version and language switcher. Switches url to selected version or language.
+ */
 (function() {
     'use strict';
 
-    var all_versions = {
+    var version_placeholder ='.version_switcher_placeholder select',
+        lang_placeholder = '.lang_switcher_placeholder select',
+        all_versions = {
         '5.0': '5.0',
         '4.3': '4.3',
         '3.3': '3.3'
     };
 
+    /**
+     * Add dropdown for versions to placeholder. Version dropdown is also
+     * generated in layout.html template. This function overwrites the
+     * dropdown in the template.
+     */
     function build_select(current_version, current_release) {
         var buf = ['<select>'];
 
@@ -22,21 +32,26 @@
             return buf.join('');
     }
 
-    function patch_url(url, new_version) {
-        var url_re = /\.org\/(\d|py3k|dev|((release\/)?\d\.\d[\w\d\.]*))\//,
-        new_url = url.replace(url_re, '.org/' + new_version + '/');
-
-        if (new_url == url && !new_url.match(url_re)) {
-            // python 2 url without version?
-            new_url = url.replace(/\.org\//, '.org/' + new_version + '/');
-        }
-
-        return new_url;
+    /**
+     * Replace version and lang in url.
+     */
+    function patch_url(url, version, lang) {
+        // Url structure is always the same, replace parts in fixed positions
+        var url = url.split('/');
+        url[3] = version;
+        url[4] = lang;
+        return url.join('/');;
     }
 
+    /**
+     * On switch function handler, redirects to existing document
+     * in different version or language if page is available
+     */
     function on_switch() {
-        var selected = $(this).children('option:selected').attr('value');
-        var url = window.location.href, new_url = patch_url(url, selected);
+        var selected_version = $(version_placeholder).children('option:selected').attr('value');
+        var selected_lang = $(lang_placeholder).children('option:selected').attr('value');
+
+        var url = window.location.href, new_url = patch_url(url, selected_version, selected_lang);
 
         if (new_url != url) {
             // check beforehand if url exists, else redirect to version's start page
@@ -46,7 +61,8 @@
                     window.location.href = new_url;
                 },
                 error: function() {
-                    window.location.href = 'http://docs.plone.org/' + selected;
+                    window.location.href = 'http://docs.plone.org/'
+                        + selected_version + '/' + selected_lang;
                 }
             });
         }
@@ -57,6 +73,6 @@
         var version = release.substr(0, 3);
         var select = build_select(version, release);
         $('.version_switcher_placeholder').html(select);
-        $('.version_switcher_placeholder select').bind('change', on_switch);
+        $(version_placeholder + ', ' + lang_placeholder).bind('change', on_switch);
     });
 })();
