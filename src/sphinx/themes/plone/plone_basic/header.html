@@ -2,14 +2,14 @@
 <header role="banner" id="banner">
   <div class="container">
 
-  	<div class="col-xs-12 col-sm-3">
-	    <a href="{{url_root}}" accesskey="1" title="Website" id="portal-logo">
-	      <img class="logo" src="{{ pathto('_static' + theme_logo, 1) }}" alt="Plone" ><span>{{theme_logo_additional_text}}</span>
-	    </a>
+    <div class="col-xs-12 col-sm-3">
+      <a href="{{url_root}}" accesskey="1" title="Website" id="portal-logo">
+        <img class="logo" src="{{ pathto('_static' + theme_logo, 1) }}" alt="Plone" ><span>{{theme_logo_additional_text}}</span>
+      </a>
     </div>
 
-	{% if theme_searchbox %}
-  	<div class="col-xs-12 col-sm-3 col-sm-offset-6">
+  {% if theme_searchbox %}
+    <div class="col-xs-12 col-sm-3 col-sm-offset-6">
         {% include "searchbox.html" %}
     </div>
     <div class="clearfix visible-xs"></div>
