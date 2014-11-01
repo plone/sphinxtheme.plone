@@ -27,7 +27,7 @@
           <ul class="breadcrumb">
             {#<li><a href="http://plone.org">Plone</a></li>#}
             <li class="master">
-              {% if theme_version_switcher and version|length > 1 %}
+              {% if theme_always_show_version_switcher or (theme_version_switcher and version|length > 1) %}
                 <span class="version_switcher_placeholder">
                   <label for="versionpicker-{{name}}">Version</label>
                   <select id="versionpicker-{{name}}">
@@ -37,7 +37,7 @@
                   </select>
                 </span>
               {% endif %}
-              {% if theme_language_switcher and theme_doc_languages|length > 1 %}
+              {% if theme_always_show_language_switcher or (theme_language_switcher and theme_doc_languages|length > 1) %}
                 <span class="lang_switcher_placeholder">
                   <label for="languagepicker-{{name}}">Language</label>
                   <select id="languagepicker-{{name}}">
