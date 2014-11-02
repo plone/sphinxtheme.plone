@@ -4,33 +4,8 @@
 (function() {
     'use strict';
 
-    var version_placeholder ='.version_switcher_placeholder select',
-        lang_placeholder = '.lang_switcher_placeholder select',
-        all_versions = {
-        '5.0': '5.0',
-        '4.3': '4.3',
-        '3.3': '3.3'
-    };
-
-    /**
-     * Add dropdown for versions to placeholder. Version dropdown is also
-     * generated in layout.html template. This function overwrites the
-     * dropdown in the template.
-     */
-    function build_select(current_version, current_release) {
-        var buf = ['<select>'];
-
-        $.each(all_versions, function(version, title) {
-            buf.push('<option value="' + version + '"');
-            if (version == current_version)
-                buf.push(' selected="selected">' + current_release + '</option>');
-            else
-                buf.push('>' + title + '</option>');
-            }
-        );
-        buf.push('</select>');
-            return buf.join('');
-    }
+    var version_placeholder = '.version_switcher select',
+        lang_placeholder = '.lang_switcher select';
 
     /**
      * Replace version and lang in url.
@@ -69,10 +44,6 @@
     }
 
     $(document).ready(function() {
-        var release = DOCUMENTATION_OPTIONS.VERSION;
-        var version = release.substr(0, 3);
-        var select = build_select(version, release);
-        $('.version_switcher_placeholder').html(select);
         $(version_placeholder + ', ' + lang_placeholder).bind('change', on_switch);
     });
 })();
