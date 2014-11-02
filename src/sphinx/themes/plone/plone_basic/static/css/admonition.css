@@ -9,6 +9,7 @@ div.admonition {
     border-style: solid none;
     border-width: 2px;
     padding: 10px 20px 10px 20px;
+    min-height: 50px;
 }
 
 div.admonition p.admonition-title + p {

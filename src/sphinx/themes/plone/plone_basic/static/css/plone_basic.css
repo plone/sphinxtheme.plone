@@ -313,6 +313,12 @@ div.admonition-description, div.admonition {
     margin-bottom: 0.5em;
 }
 
+div.row > div.admonition.version_warning {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 140%;
+}
+
 .fa-arrow-circle-left:before {
     margin-right: 0.2em;
 }
