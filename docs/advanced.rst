@@ -1,6 +1,7 @@
 .. _Sphinx: http://sphinx-doc.org/
 .. _Plone: http://plone.org
 .. _docs.plone.org: http://docs.plone.org
+.. _Bootstrap: http://bootstrap.org
 
 =====================================
 Advanced Usage on sphinx.themes.plone
@@ -14,7 +15,7 @@ There are two type of configuration parts in the conf.py of the `Sphinx`_ Docume
 
 * sphinx-keywords (see )
 
-  - ``project``
+  - project
   - copyright
   - trademark_name
   - version
@@ -38,6 +39,13 @@ There are two type of configuration parts in the conf.py of the `Sphinx`_ Docume
   - always_show_language_switcher
   - show_version_warning
 
+
+Sphinx-Keyword Settings
+.......................
+
+Description and Naming Settings
+===============================
+
 project
 -------
 
@@ -54,7 +62,8 @@ version
 
 
 
-
+Theme specific configuration (html_theme_options)
+.................................................
 
 
 Language Settings
@@ -64,36 +73,209 @@ Language Settings
 doc_language
 ------------
 
-Possible Values: any Language Code (see ref)
+Field-Type:
+  String
 
-Default: 'en'
+Possible Values:
+  any Language Code (see ref)
+
+Default:
+  'en'
 
 
 doc_languages
 -------------
 
-Default: ``[{'lang_code':'en','lang_name':'English'}]``
+Default:
+  ``[{'lang_code':'en','lang_name':'English'}]``
 
-colophon = True
-doormat = True
-external_topbar = False
 
-favicon = img/favicon.ico
-logo = /img/plone.svg
-logo_additional_text = Documentation
-trademark_logo = /img/plone-invers.svg
-trademark_name = Plone
+Visual Switches
+===============
 
-searchbox = True
-sticky_navigation = False
+colophon
+--------
 
-show_version_warning = False
+Switch on or off the Colophon in the Theme, Trademark-Name and Logo and copyright Block at the bottom of the page.
 
-# Version and language switcher setting
-version_switcher = True
-language_switcher = True
-always_show_version_switcher = False
-always_show_language_switcher = False
+Field-Type:
+  Boolean
+
+Possible / Useful Values:
+  True / False
+
+Default:
+  True
+
+
+doormat
+-------
+
+Switch on or of the rendering of the Doormat block and Template. The doormat is the special Navigation Block at the bottom of the page.
+
+Connected Customization option: :ref:`doormat_template`
+
+Field-Type:
+  Boolean
+
+Possible / Useful Values:
+  True / False
+
+Default:
+  True
+
+
+external_topbar
+---------------
+
+Field-Type:
+  Boolean
+
+Possible / Useful Values:
+  True / False
+
+Default:
+  ``False``
+
+show_version_warning
+--------------------
+
+
+Field-Type:
+  Boolean
+
+Possible / Useful Values:
+  ``True`` / ``False``
+
+Default:
+  ``False``
+
+version_switcher
+----------------
+
+Field-Type:
+  Boolean
+
+Possible / Useful Values:
+  ``True`` / ``False``
+
+Default: 
+  ``True``
+
+
+always_show_version_switcher
+----------------------------
+
+Field-Type:
+  Boolean
+
+Possible / Useful Values:
+  ``True`` / ``False``
+
+Default:
+  False
+
+language_switcher
+-----------------
+
+Field-Type:
+  Boolean
+
+Possible / Useful Values:
+  True / False
+
+Default:
+  True
+
+always_show_language_switcher
+-----------------------------
+
+Field-Type:
+  Boolean
+
+Possible / Useful Values:
+  True / False
+
+Default:
+  False
+
+
+
+searchbox
+---------
+
+Field-Type:
+  Boolean
+
+Possible / Useful Values:
+  True / False
+
+Default:
+  True
+
+
+
+sticky_navigation
+-----------------
+
+Field-Type:
+  Boolean
+
+Possible / Useful Values:
+  True / False
+
+Default:
+  ``False``
+
+Logo Customization
+==================
+
+logo
+----
+
+Logo on the Top of the Page
+
+Field-Type: Path-String
+
+Possible / Useful Values: path to image in static folder
+
+logo_additional_text
+--------------------
+
+Additional Text below the Logo, if changes you might want to change the css style for it too.
+
+Field-Type: String
+
+Default: Documentation
+
+trademark_logo
+--------------
+
+
+Field-Type: Path-String
+
+Possible / Useful Values: path to the image in static folder
+
+trademark_name
+--------------
+
+Alt tag for the trademark_logo image
+
+
+Field-Type
+  String
+
+Default
+  Plone
+
+
+favicon 
+-------
+
+Field-Type:
+  Path-String
+
+
 
 Google Analytic Settings
 ========================
@@ -108,14 +290,20 @@ Use and include Google Analytics code which is modified by the following keyword
   - googleanalytics_domain
   - googleanalytics_path
 
-Possible Values: True / False
+Possible Values: 
+  True / False
 
-Default: ``False``
+Default: 
+  ``False``
 
 googleanalytics_id
 ------------------
 
-Default: not set
+Field-Type:
+  String
+
+Default:
+  not set
 
 
 googleanalytics_domain
@@ -124,7 +312,11 @@ googleanalytics_domain
 googleanalytics_path
 --------------------
 
-Default: /
+Field-Type:
+  String
+
+Default:
+  /
 
 
 
@@ -135,13 +327,75 @@ Build in Customization Options
 
 sphinx.themes.plone makes it simply possible to modify or customize several parts of the theme by dropping a template overwriter in a _templates directory in your documentation root or by replacing elements like Logo or so in the static folder of the documentation root.
 
-templates names
+As sphinx.themes.plone uses the `Bootstrap`_ Framework for making the Grid and some of the visual styling easyer some the templates must respect those rules.
 
+templates names
+...............
 
 - doormat.html
+- version_warning.html
+
+.. _doormat_template:
+
+Structure of doormat
+====================
+
+
+.. code-block:: html+jinja
+
+    {% block doormat%}
+        <nav class="row">
+          <div class="col-xs-3">
+            <ul class="list-unstyled">
+              <li><a href="#">doormat</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-3">
+            <ul class="list-unstyled">
+              <li><a href="#">doormat</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-3">
+            <ul class="list-unstyled">
+              <li><a href="#">doormat</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-3">
+            <ul class="list-unstyled">
+              <li><a href="#">doormat</a></li>
+            </ul>
+          </div>
+
+        </nav>
+    {% endblock %}
+
+Structure of version_warning
+============================
+
+.. code-block:: html+jinja
+
+    {% block version_warning %}
+    {% endblock %}
 
 
 
+
+important static ressources to overwrite
+........................................
+
+* logos, favicon and apple-touch-icon
+* css
+
+  * admonition.css
+
+* specific icons:
+
+  * dialog-note.png
+  * dialog-seealso.png
+  * dialog-todo.png
+  * dialog-topic.png
+  * dialog-warning.png
+  * external.png
 
 
 
