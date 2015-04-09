@@ -56,13 +56,13 @@ Edit the "conf.py" configuration file to point to the plone themes::
     # Activate the theme like this:
     html_theme = 'plone_org_4'
 
-Additional switches for the theme, see detaild documentation.
+Additional switches for the theme, see detailed documentation.
 
 Available Themes
 ----------------
 
-- plone_classic (TODO: to be implemented)
-- plone_sunburst (TODO: to be implemented)
+- plone_classic
+- plone_sunburst
 - plone_barceloneta (TODO: to be implemented)
 - plone_org_4
 - plone_org_5 (TODO: to be finalized)
@@ -77,7 +77,11 @@ Contribute
 License
 -------
 
-The project is licensed under the GPLv2 license.
+* The technical parts of this project is licensed under the GPLv2 license.
+* The text and illustrations in this package / generated pages are licensed by the Plone Foundation under a Creative Commons Attribution 4.0 International license.
+* Plone and the Plone<sup>®</sup> logo are registered trademarks of the Plone Foundation, registered in the United States and other countries.
+* For guidelines on the permitted uses of the Plone trademarks, see https://plone.org/foundation/logo
+* All other trademarks are owned by their respective owners.
 
 .. _Sphinx: http://sphinx-doc.org/
 .. _Plone: http://plone.org
