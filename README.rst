@@ -5,7 +5,7 @@ Sphinx Themes for Plone Documentation
 sphinx.themes.plone is a collection of `Sphinx`_ themes for the `Plone`_ documentation project.
 
 The different themes are used on `docs.plone.org`_, but are not limited for this purpose.
-It might be used for all Plone Package Documentations, or even private usecase but than without the Plone Logo and Footer.
+It might be used for all Plone Package Documentations, or even private usecase but than without the Plone Logo and Footer (respect the License).
 
 
 Features
@@ -38,7 +38,9 @@ Install sphinx.themes.plone with buildout::
         Sphinx
         sphinx.themes.plone
 
-**Warning:** *You should never use a checkout of the theme package for just appling a theme to your documentations.*
+.. CAUTION::
+    *You should never use a checkout of the theme package for just appling a theme to your documentations.*
+    Never touch this package to adjust configuration or customize parts, there is no need for that. Read the documentation please: http://docs.plone.org/...
 
 Configuration
 -------------
@@ -73,13 +75,14 @@ Contribute
 - Issue Tracker: https://github.com/plone/sphinx.themes.plone/issues
 - Source Code: https://github.com/plone/sphinx.themes.plone
 
+.. _licence:
 
 License
 -------
 
 * The technical parts of this project is licensed under the GPLv2 license.
 * The text and illustrations in this package / generated pages are licensed by the Plone Foundation under a Creative Commons Attribution 4.0 International license.
-* Plone and the Plone<sup>®</sup> logo are registered trademarks of the Plone Foundation, registered in the United States and other countries.
+* Plone and the Plone :sup:`®` logo are registered trademarks of the Plone Foundation, registered in the United States and other countries.
 * For guidelines on the permitted uses of the Plone trademarks, see https://plone.org/foundation/logo
 * All other trademarks are owned by their respective owners.
 

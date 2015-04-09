@@ -1,54 +1,147 @@
+.. _Sphinx: http://sphinx-doc.org/
+.. _Plone: http://plone.org
+.. _docs.plone.org: http://docs.plone.org
+
+=====================================
 Advanced Usage on sphinx.themes.plone
 =====================================
 
+---------------------
+General Configuration
+---------------------
+
+There are two type of configuration parts in the conf.py of the `Sphinx`_ Documentation you are try to apply one of our theme on:
+
+* sphinx-keywords (see )
+
+  - ``project``
+  - copyright
+  - trademark_name
+  - version
+  - release
+  - html_use_opensearch
+
+* Theme specific configuration done via the html_theme_options dict:
+
+  - rightsidebar
+  - doc_languages
+  - doc_language
+  - trademark_name
+  - searchbox
+  - use_ga
+  - googleanalytics_id
+  - googleanalytics_domain
+  - googleanalytics_path
+  - external_topbar
+  - version_switcher
+  - always_show_version_switcher
+  - always_show_language_switcher
+  - show_version_warning
+
+project
+-------
+
+copyright
+---------
 
 
-# General information about the project.
-project = u'Plone Documentation'
-copyright = u'''The text and illustrations in this website are licensed by the Plone Foundation under a Creative Commons Attribution 4.0 International license.
-        Plone and the Plone<sup>®</sup> logo are registered trademarks of the Plone Foundation, registered in the United States and other countries.
-        For guidelines on the permitted uses of the Plone trademarks, see https://plone.org/foundation/logo
-        All other trademarks are owned by their respective owners.
-        Hosted by Rackspace.'''
+trademark_name
+--------------
 
-trademark_name = "Plone"
-
-version = [
-    #'5.0',
-    '4.3',
-    #'3.3',
-]
-# The full version, including alpha/beta/rc tags.
-release = '4.3'
-
-# Announce that we have a opensearch plugin
-html_use_opensearch = 'http://docs.plone.org'
+version
+-------
 
 
 
-html_theme = 'plone_org_4'  # for Plone 4 documentation
-#html_theme = 'plone_org_5'  # for Plone 5 documentation
-import sphinx.themes.plone
-html_theme_path = sphinx.themes.plone.get_html_theme_path()
 
 
-html_theme_options = {
-    #"rightsidebar": "false",
-    'doc_languages': [
-        {'lang_code': 'en', 'lang_name': 'English'},
-        #{'lang_code': 'de', 'lang_name': 'German'},
-        #{'lang_code': 'it', 'lang_name': 'Italian'},
-    ],
-    'doc_language': 'en',
-    'trademark_name': 'Plone',
-    'searchbox': True,
-    'use_ga': True,
-    'googleanalytics_id': 'UA-1907133-6',
-    'googleanalytics_domain': 'plone.org',
-    'googleanalytics_path': '/',
-    'external_topbar': True,
-    'version_switcher': True,
-    'always_show_version_switcher': True,
-    'always_show_language_switcher': False,
-    'show_version_warning': False,
-}
+
+
+Language Settings
+=================
+
+
+doc_language
+------------
+
+Possible Values: any Language Code (see ref)
+
+Default: 'en'
+
+
+doc_languages
+-------------
+
+Default: ``[{'lang_code':'en','lang_name':'English'}]``
+
+colophon = True
+doormat = True
+external_topbar = False
+
+favicon = img/favicon.ico
+logo = /img/plone.svg
+logo_additional_text = Documentation
+trademark_logo = /img/plone-invers.svg
+trademark_name = Plone
+
+searchbox = True
+sticky_navigation = False
+
+show_version_warning = False
+
+# Version and language switcher setting
+version_switcher = True
+language_switcher = True
+always_show_version_switcher = False
+always_show_language_switcher = False
+
+Google Analytic Settings
+========================
+
+
+use_ga
+------
+
+Use and include Google Analytics code which is modified by the following keywords:
+
+  - googleanalytics_id
+  - googleanalytics_domain
+  - googleanalytics_path
+
+Possible Values: True / False
+
+Default: ``False``
+
+googleanalytics_id
+------------------
+
+Default: not set
+
+
+googleanalytics_domain
+----------------------
+
+googleanalytics_path
+--------------------
+
+Default: /
+
+
+
+
+------------------------------
+Build in Customization Options
+------------------------------
+
+sphinx.themes.plone makes it simply possible to modify or customize several parts of the theme by dropping a template overwriter in a _templates directory in your documentation root or by replacing elements like Logo or so in the static folder of the documentation root.
+
+templates names
+
+
+- doormat.html
+
+
+
+
+
+
