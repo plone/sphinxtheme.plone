@@ -340,3 +340,8 @@ footer#doormat nav div {
 footer#doormat nav a {
     line-height: 1.5em;
 }
+
+/* hide the language switcher for now */
+.lang_switcher {
+    display: none;
+}
