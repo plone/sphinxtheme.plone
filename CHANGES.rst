@@ -5,6 +5,7 @@ Changelog
 0.2.0 (unreleased)
 ------------------
 
+- Hide language switcher [polyester]
 - Added Documentation [loechel]
 
 0.1.1 (26/06/2014)
