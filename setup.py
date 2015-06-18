@@ -11,7 +11,7 @@ setup(
     # Get more strings from
     # http://pypi.python.org/pypi?:action=list_classifiers
     classifiers=[
-        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.7',
         'Framework :: Plone',
         'Framework :: Sphinx',
         'License :: OSI Approved :: GNU General Public License (GPL)',
