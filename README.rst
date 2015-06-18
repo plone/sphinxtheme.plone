@@ -22,10 +22,6 @@ Features
 Installation
 ------------
 
-Install sphinx.themes.plone with pip::
-
-    pip install sphinx.themes.plone
-
 Install sphinx.themes.plone with buildout::
 
     [buildout]
