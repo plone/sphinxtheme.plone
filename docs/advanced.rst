@@ -13,26 +13,33 @@ General Configuration
 
 There are two type of configuration parts in the conf.py of the `Sphinx`_ Documentation you are try to apply one of our theme on:
 
+.. toctree::
+
+  advanced
+
 * sphinx-keywords (see )
 
-  - project
-  - copyright
-  - trademark_name
-  - version
-  - release
-  - html_use_opensearch
+  - :ref:`project`
+  - :ref:`copyright`
+  - :ref:`trademark_name`
+  - :ref:`version`
+  - :ref:`release`
+  - :ref:`html_use_opensearch`
 
 * Theme specific configuration done via the html_theme_options dict:
 
   - rightsidebar
   - doc_languages
   - doc_language
-  - trademark_name
+  - :ref:`html_trademark_name`
   - searchbox
-  - use_ga
-  - googleanalytics_id
-  - googleanalytics_domain
-  - googleanalytics_path
+  - :ref:`google_analytic_settings`
+
+    - :ref:`use_ga`
+    - :ref:`googleanalytics_id`
+    - :ref:`googleanalytics_domain`
+    - :ref:`googleanalytics_path`
+
   - external_topbar
   - version_switcher
   - always_show_version_switcher
@@ -46,29 +53,54 @@ Sphinx-Keyword Settings
 Description and Naming Settings
 ===============================
 
+
+.. _project:
+
 project
 -------
+
+
+.. _copyright:
 
 copyright
 ---------
 
 
+.. _trademark_name:
+
 trademark_name
 --------------
+
+
+.. _version:
 
 version
 -------
 
 
+.. _release:
 
+release:
+--------
+
+.. _html_use_opensearch:
+
+html_use_opensearch
+-------------------
+
+.. _html_theme_options:
 
 Theme specific configuration (html_theme_options)
 .................................................
 
 
+.. _languages_settings:
+
 Language Settings
 =================
 
+
+.. _doc_language:
 
 doc_language
 ------------
@@ -83,6 +115,8 @@ Default:
   'en'
 
 
+.. _doc_languages:
+
 doc_languages
 -------------
 
@@ -90,8 +124,13 @@ Default:
   ``[{'lang_code':'en','lang_name':'English'}]``
 
 
+
+.. _visual_switches:
+
 Visual Switches
 ===============
+
+.. _colophon:
 
 colophon
 --------
@@ -107,6 +146,8 @@ Possible / Useful Values:
 Default:
   True
 
+
+.. _doormat:
 
 doormat
 -------
@@ -125,6 +166,8 @@ Default:
   True
 
 
+.. _external_topbar:
+
 external_topbar
 ---------------
 
@@ -136,6 +179,9 @@ Possible / Useful Values:
 
 Default:
   ``False``
+
+
+.. _show_version_warning:
 
 show_version_warning
 --------------------
@@ -150,6 +196,8 @@ Possible / Useful Values:
 Default:
   ``False``
 
+.. _version_switcher:
+
 version_switcher
 ----------------
 
@@ -163,6 +211,8 @@ Default:
   ``True``
 
 
+.. _always_show_version_switcher:
+
 always_show_version_switcher
 ----------------------------
 
@@ -175,6 +225,9 @@ Possible / Useful Values:
 Default:
   False
 
+
+.. _language_switcher:
+
 language_switcher
 -----------------
 
@@ -186,6 +239,9 @@ Possible / Useful Values:
 
 Default:
   True
+
+
+.. _always_show_language_switcher:
 
 always_show_language_switcher
 -----------------------------
@@ -200,6 +256,7 @@ Default:
   False
 
 
+.. _searchbox:
 
 searchbox
 ---------
@@ -215,6 +272,8 @@ Default:
 
 
 
+.. _sticky_navigation:
+
 sticky_navigation
 -----------------
 
@@ -227,8 +286,14 @@ Possible / Useful Values:
 Default:
   ``False``
 
+
+.. _custom_logo:
+
 Logo Customization
 ==================
+
+
+.. _logo:
 
 logo
 ----
@@ -239,6 +304,9 @@ Field-Type: Path-String
 
 Possible / Useful Values: path to image in static folder
 
+
+.. _logo_additional_text:
+
 logo_additional_text
 --------------------
 
@@ -248,6 +316,8 @@ Field-Type: String
 
 Default: Documentation
 
+.. _trademark_logo:
+
 trademark_logo
 --------------
 
@@ -255,6 +325,8 @@ trademark_logo
 Field-Type: Path-String
 
 Possible / Useful Values: path to the image in static folder
+
+.. _html_trademark_name:
 
 trademark_name
 --------------
@@ -269,6 +341,8 @@ Default
   Plone
 
 
+.. _favicon:
+
 favicon 
 -------
 
@@ -277,9 +351,13 @@ Field-Type:
 
 
 
+.. _google_analytic_settings:
+
 Google Analytic Settings
 ========================
 
+
+.. _use_ga:
 
 use_ga
 ------
@@ -296,6 +374,9 @@ Possible Values:
 Default: 
   ``False``
 
+
+.. _googleanalytics_id:
+
 googleanalytics_id
 ------------------
 
@@ -306,8 +387,12 @@ Default:
   not set
 
 
+.. _googleanalytics_domain:
+
 googleanalytics_domain
 ----------------------
+
+.. _googleanalytics_path:
 
 googleanalytics_path
 --------------------

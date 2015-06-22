@@ -32,12 +32,13 @@ Full Documentation struture
 .. toctree::
    :maxdepth: 4
 
-
    usage
    advanced
    development
    theme_preview
-   HISTORY
+
+
+..   HISTORY
 
 Indices and tables
 ==================
