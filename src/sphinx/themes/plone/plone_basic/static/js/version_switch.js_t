@@ -69,7 +69,7 @@
                     } else if (DOCUMENTATION_OPTIONS.USE_LANGUAGE_SWITCHER) {
                         window.location.href = 'http://docs.plone.org/' + selected_lang;
                     } else {
-                        window.location.href = new_url;
+                        window.location.href = url;
                     }
                 }
             });
