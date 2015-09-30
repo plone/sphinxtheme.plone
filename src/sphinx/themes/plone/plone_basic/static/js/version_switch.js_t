@@ -19,6 +19,20 @@
     }
 
     /**
+     * normalize url.
+     */
+    function normalize_url(url) {
+        // if url[3]isn't numerical, we're on latest version without version info in URL, so insert it
+        var url = url.split('/');
+        if (url[3]>'0') {
+          // better insert stuff
+          url.splice(3,0,'en');
+          url.splice(3,0,'5');
+        }
+        return url.join('/');;
+    }
+
+    /**
      * On switch function handler, redirects to existing document
      * in different version or language if page is available
      */
@@ -26,9 +40,11 @@
         var selected_version = $(version_placeholder).children('option:selected').attr('value');
         var selected_lang = $(lang_placeholder).children('option:selected').attr('value');
 
-        var url = window.location.href, new_url = patch_url(url, selected_version, selected_lang);
+        var url = window.location.href;
+        var norm_url = normalize_url(url);
+        var new_url = patch_url(norm_url, selected_version, selected_lang);
 
-        if (new_url != url) {
+        if (new_url != norm_url) {
             // check beforehand if url exists, else redirect to version's start page
             $.ajax({
                 url: new_url,
