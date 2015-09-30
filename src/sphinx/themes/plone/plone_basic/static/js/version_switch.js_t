@@ -4,44 +4,18 @@
 (function() {
     'use strict';
 
-    var version_placeholder = '.version_switcher select';
-    var lang_placeholder = '.lang_switcher select';
-
-    function in_array(value, test_array) {
-        a_length = test_array.length;
-        for (var i = 0; i < a_length; i++) {
-            if (test_array[i] === value) {
-                return true;
-            }
-        }
-        return false;
-    }
+    var version_placeholder = '.version_switcher select',
+        lang_placeholder = '.lang_switcher select';
 
     /**
      * Replace version and lang in url.
      */
     function patch_url(url, version, lang) {
         // Url structure is always the same, replace parts in fixed positions
-        var parser = document.createElement('a');
-        parser.href = url;
-        var path = parser.pathname.split('/');
-        if (path.length > 2) {
-            current_version = path[1];
-            if (DOCUMENTATION_OPTIONS.USE_VERSION_SWITCHER && in_array(current_version, DOCUMENTATION_OPTIONS.VERSIONS)) {
-                path[1] = version;
-            }
-            if (DOCUMENTATION_OPTIONS.USE_LANGUAGE_SWITCHER && in_array(current_language, DOCUMENTATION_OPTIONS.LANGUAGES)) {
-                if (DOCUMENTATION_OPTIONS.USE_VERSION_SWITCHER && in_array(current_version, DOCUMENTATION_OPTIONS.VERSIONS)) {
-                    path[1] = lang;
-                }
-                else {
-                    path[2] = lang;
-                }
-            }
-
-        }
-        parser.pathname = path.join('/');
-        return parser.href;
+        var url = url.split('/');
+        url[3] = version;
+        url[4] = lang;
+        return url.join('/');;
     }
 
     /**
@@ -62,15 +36,8 @@
                     window.location.href = new_url;
                 },
                 error: function() {
-                    if (DOCUMENTATION_OPTIONS.USE_VERSION_SWITCHER && DOCUMENTATION_OPTIONS.USE_LANGUAGE_SWITCHER) {
-                        window.location.href = 'http://docs.plone.org/' + selected_version + '/' + selected_lang;
-                    } else if (DOCUMENTATION_OPTIONS.USE_VERSION_SWITCHER) {
-                        window.location.href = 'http://docs.plone.org/' + selected_version ;
-                    } else if (DOCUMENTATION_OPTIONS.USE_LANGUAGE_SWITCHER) {
-                        window.location.href = 'http://docs.plone.org/' + selected_lang;
-                    } else {
-                        window.location.href = url;
-                    }
+                    window.location.href = 'http://docs.plone.org/'
+                        + selected_version + '/' + selected_lang;
                 }
             });
         }
