@@ -24,7 +24,7 @@
     function normalize_url(url) {
         // if url[3]isn't numerical, we're on latest version without version info in URL, so insert it
         var url = url.split('/');
-        if (url[3]>'0') {
+        if (url[3]>'9') {
           // better insert stuff
           url.splice(3,0,'en');
           url.splice(3,0,'5');
