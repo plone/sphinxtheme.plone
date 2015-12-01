@@ -11,7 +11,7 @@ It might be used for all Plone Package Documentations, or even private usecase b
 Features
 --------
 
-- sphinx.themes.plone comes with own themes for 
+- sphinx.themes.plone comes with own themes for
 
   * Plone Classic (Plone 2.0-3.3 Design)
   * Plone Sunburst (Plone 4 Design)
@@ -35,6 +35,7 @@ Install sphinx.themes.plone with buildout::
         sphinx.themes.plone
 
 .. CAUTION::
+
     *You should never use a checkout of the theme package for just appling a theme to your documentations.*
     Never touch this package to adjust configuration or customize parts, there is no need for that. Read the documentation please: http://docs.plone.org/...
 
@@ -54,7 +55,11 @@ Edit the "conf.py" configuration file to point to the plone themes::
     # Activate the theme like this:
     html_theme = 'plone_org_4'
 
-Additional switches for the theme, see detailed documentation.
+Additional switches for the theme, see detailed documentation. For the current docs.plone.org, **always** set the following (this should be done in the conf.py of the related papyrus branch):
+
+always_show_version_switcher = True
+always_show_language_switcher = True
+selected_version = *the version of the docs that should come preselected in the dropdown, so 5, 4 or 3*
 
 Available Themes
 ----------------

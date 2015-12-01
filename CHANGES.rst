@@ -4,7 +4,7 @@ Changelog
 
 0.2.0 (unreleased)
 ------------------
-
+- add variable for selected_version in the version dropdown/switcher [polyester]
 - Hide language switcher [polyester]
 - Added Documentation [loechel]
 
