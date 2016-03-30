@@ -354,3 +354,9 @@ footer#doormat nav a {
     -moz-user-select: none;
     -webkit-user-select: none;
 }
+
+/* Make version_added/changed nicer */
+.versionmodified {
+    font-style: italic;
+    background-color: #ddd;
+}

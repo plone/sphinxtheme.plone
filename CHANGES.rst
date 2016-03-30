@@ -7,12 +7,14 @@ Changelog
 - add variable for selected_version in the version dropdown/switcher [polyester]
 - Hide language switcher [polyester]
 - Added Documentation [loechel]
+- Added CSS for Command Prompt [staeff]
+- Improved CSS for version_changed/added [svx]
+- Added freshdesk to html template [svx]
 
 0.1.1 (26/06/2014)
 ------------------
 
-- Add option for Google Analytics configuration
-  [svx]
+- Add option for Google Analytics configuration [svx]
 - Added MANIFEST.in to include docs folder [loechel]
 - fixes install error [loechel]
 
