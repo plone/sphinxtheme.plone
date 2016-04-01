@@ -10,6 +10,7 @@ Changelog
 - Added CSS for Command Prompt [staeff]
 - Improved CSS for version_changed/added [svx]
 - Added freshdesk to html template [svx]
+- Improved CSS for code-block [staeff] [svx]
 
 0.1.1 (26/06/2014)
 ------------------
