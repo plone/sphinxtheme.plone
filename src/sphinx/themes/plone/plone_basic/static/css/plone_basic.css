@@ -360,3 +360,17 @@ footer#doormat nav a {
     font-style: italic;
     background-color: #ddd;
 }
+
+.example .highlight .kp{
+    color: #000;
+}
+
+/* CSS for os-example plugin */
+.example .highlight pre:before {
+    color: #000;
+    content: '$ ';
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
