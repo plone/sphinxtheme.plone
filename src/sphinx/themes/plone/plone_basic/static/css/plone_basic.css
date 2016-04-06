@@ -75,6 +75,11 @@ header form#rtd-search-form {
     text-align: right;
 }
 
+.guilabel, .menuselection {
+    background-color: #fff493;
+    font-family: sans-serif;
+}
+
 @media(max-width: 768px) {
     header form#rtd-search-form {
         line-height: 1em;
