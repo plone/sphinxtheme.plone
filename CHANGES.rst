@@ -11,6 +11,7 @@ Changelog
 - Improved CSS for version_changed/added [svx]
 - Added freshdesk to html template [svx]
 - Improved CSS for code-block [staeff] [svx]
+- Nav items should break line if neccessary [staeff]
 
 0.1.1 (26/06/2014)
 ------------------
