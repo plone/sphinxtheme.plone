@@ -379,3 +379,8 @@ footer#doormat nav a {
     -moz-user-select: none;
     -webkit-user-select: none;
 }
+
+/* Nav items should break if neccessary */
+a.internal code {
+  white-space: normal
+}
