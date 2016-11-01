@@ -277,6 +277,7 @@
 {%- endif %}
 
 <!-- Below block includes custom search per version -->
+{%- if theme_use_algolia %}
 <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
 <script type="text/javascript"> docsearch({
   apiKey: 'HEREOURAPIKEY',
@@ -286,6 +287,7 @@
   debug: false // Set debug to true if you want to inspect the dropdown
 });
 </script>
+{%- endif %}
 
 
 {% endblock %}
