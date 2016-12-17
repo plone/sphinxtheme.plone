@@ -152,9 +152,9 @@ Default:
 doormat
 -------
 
-Switch on or of the rendering of the Doormat block and Template. The doormat is the special Navigation Block at the bottom of the page.
+Switch on or off the rendering of the doormat block and template. The doormat is the special navigation block at the bottom of the page.
 
-Connected Customization option: :ref:`doormat_template`
+Connected customization option: :ref:`doormat_template`
 
 Field-Type:
   Boolean
