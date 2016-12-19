@@ -14,6 +14,7 @@ Changelog
 - Nav items should break line if neccessary [staeff]
 - Add custom search [svx]
 - Add tagmanager code [polyester]
+- update doormat (footer), fix typos in Advanced Usage [tkimnguyen]
 
 0.1.1 (26/06/2014)
 ------------------
