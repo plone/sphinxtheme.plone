@@ -145,7 +145,7 @@ div.document {
 }
 
 a:link, a:visited {
-    color: #205C90;
+    color: #1b3471;
     text-decoration: none;
 }
 
@@ -390,3 +390,7 @@ a.internal code {
   line-height: 32px
 }
 
+/* Custom for links */
+.toctree-l1 a {
+text-decoration: none;
+}
