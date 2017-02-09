@@ -387,10 +387,18 @@ a.internal code {
 
 /* Tweak Algolia search css */
 .algolia-autocomplete .algolia-autocomplete-right {
-  line-height: 32px
+    line-height: 32px
 }
 
 /* Custom for links */
 .toctree-l1 a {
-text-decoration: none;
+    text-decoration: none;
 }
+
+.freshwidget-button a {
+    position: fixed;
+    white-space: nowrap;
+    outline: 0;
+    text-decoration: none;
+}
+
