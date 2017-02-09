@@ -146,7 +146,7 @@ div.document {
 
 a:link, a:visited {
     color: #1b3471;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:link:hover,
