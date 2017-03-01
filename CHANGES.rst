@@ -17,6 +17,7 @@ Changelog
 - Update doormat (footer), fix typos in Advanced Usage [tkimnguyen]
 - Change color of 'support widget' to match with plone.org
 - change links color and underline for acessibility and better visibility [svx,polyester]
+- Add Header
 
 0.1.1 (26/06/2014)
 ------------------
