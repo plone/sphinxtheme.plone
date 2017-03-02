@@ -20,9 +20,8 @@ Changelog
 - Change links color and underline for accessibility and better visibility [svx,polyester]
 - Add Topbar Header for cross navigation [svx,loechel]
 - Fix Accessibility Issue with title tags in Topbar [loechel]
-- Add Header
-- fix color schema to let ploneorg5 theme match the release plone.org for Plone Verison 5 [loechel]
 - Added gitter chat button [svx,loechel]
+- fix color schema to let ploneorg5 theme match the release plone.org for Plone Verison 5 [loechel]
 
 0.1.1 (26/06/2014)
 ------------------
