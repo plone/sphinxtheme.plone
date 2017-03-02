@@ -41,8 +41,8 @@ section {
 }
 div#topbar.navbar {
     margin-bottom: 0;
-    height:40px;
-    min-height: 40px;
+    /*height:23px;*/
+    min-height: 23px;
 }
 
 header {
@@ -408,56 +408,65 @@ a#portal-logo {
 
 /* Custom for Plone Header Bar */
 .topbar{
-font-size: 11px;
-font-weight: 600;
-text-transform: uppercase;
-background: #1f1238;
-width: 100%;
-overflow: hidden;
-border-bottom: 1px solid black;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #1f1238;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid black;
 }
+
 .topcontainer{
-margin-right: auto;
-margin-left: auto;
-padding-left: 15px;
-padding-right: 15px
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
 }
+
 @media (min-width: 968px){
-.topcontainer{
-  width: 750px;
-  }
+    .topcontainer{
+        width: 750px;
+    }
 }
+
 @media (min-width: 992px){
-.topcontainer{
-  width: 970px;
-  }
+    .topcontainer{
+        width: 970px;
+    }
 }
+
 @media (min-width: 1200px){
-.topcontainer{
-  width: 1170px;
-  }
+    .topcontainer{
+        width: 1170px;
+    }
 }
 .topbar ul{
-  margin-right: 2.5em;
-  float: right;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin-right: 2.5em;
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .topbar ul li{
-  float: left;
+    float: left;
 }
 .topbar a{
-color: #e5e5e5;
-text-decoration: none;
-padding: 7px 8px 5px 8px;
-line-height: 11px;
-display: inline-block;
-font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-font-size: 11px;
-font-weight: 600;
+    color: #e5e5e5;
+    text-decoration: none;
+    padding: 7px 8px 5px 8px;
+    line-height: 11px;
+    display: inline-block;
+    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
 }
+
 .topbar a:hover{
-color: #fff;
-background: #2a184b;
+    color: #fff;
+    background: #2a184b;
+}
+
+.cross-reference {
+    text-transform: uppercase;
 }
