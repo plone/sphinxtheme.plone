@@ -395,6 +395,10 @@ a.internal code {
     text-decoration: none;
 }
 
+a#portal-logo {
+    text-decoration: none;
+}
+
 .freshwidget-button a {
     position: fixed;
     white-space: nowrap;
