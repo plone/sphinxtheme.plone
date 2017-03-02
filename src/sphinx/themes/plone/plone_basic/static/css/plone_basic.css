@@ -67,6 +67,13 @@ header a span {
     font-size: 24px;
 }
 
+header a#portal-logo,
+header a#portal-logo:checked,
+header a#portal-logo:hover,
+header a#portal-logo:active {
+    text-decoration: none;
+}
+
 header form#rtd-search-form {
     font-size: 14px;
     margin-top: 10px;
