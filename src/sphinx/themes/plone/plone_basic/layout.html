@@ -290,6 +290,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 {%- endif %}
 
+<!-- Below block includes our gitter widget -->
+{%- if theme_use_gitter %}
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'plone/public'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer>
+</script>
+{%- endif %}
+
 <!-- Below block includes custom search per version -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
 <script type="text/javascript"> docsearch({
