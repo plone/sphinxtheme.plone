@@ -39,6 +39,7 @@ section {
     padding: 0;
     width: 1px;
 }
+
 div#topbar.navbar {
     margin-bottom: 0;
     /*height:23px;*/
@@ -48,7 +49,6 @@ div#topbar.navbar {
 header {
     height: auto;
 }
-
 
 header a {
     /*
