@@ -168,6 +168,12 @@ a.gitter-open-chat-button:visited:hover {
     text-decoration: underline;
 }
 
+.gitter-chat-embed {
+    z-index: 2000;
+    background-color: #ffffff;
+    top: 23px
+}
+
 div.breadcrumbs-container {
     margin-bottom: 10px;
 }
