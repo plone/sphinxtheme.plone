@@ -17,7 +17,7 @@ Changelog
 - Update doormat (footer), fix typos in Advanced Usage [tkimnguyen]
 - Change color of 'support widget' to match with plone.org
 - change links color and underline for accessibility and better visibility [svx,polyester]
-- Add Header
+- Add Topbar Header for cross navigation [svx,loechel]
 - fix color schema to let ploneorg5 theme match the release plone.org for Plone Verison 5 [loechel]
 
 0.1.1 (26/06/2014)
