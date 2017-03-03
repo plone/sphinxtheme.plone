@@ -16,8 +16,8 @@ Changelog
 - Add tagmanager code [polyester]
 - Update doormat (footer), fix typos in Advanced Usage [tkimnguyen]
 - Change color of 'support widget' to match with plone.org
-- change links color and underline for acessibility and better visibility [svx,polyester]
-- Add Header
+- change links color and underline for accessibility and better visibility [svx,polyester]
+- Add Topbar Header for cross navigation [svx,loechel]
 
 0.1.1 (26/06/2014)
 ------------------
