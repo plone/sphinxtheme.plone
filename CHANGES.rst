@@ -10,6 +10,7 @@ Changelog
 - Added CSS for Command Prompt [staeff]
 - Improved CSS for version_changed/added [svx]
 - Added freshdesk to html template [svx]
+- Added gitter chat button [svx,loechel]
 - Improved CSS for code-block [staeff] [svx]
 - Nav items should break line if neccessary [staeff]
 - Add custom search [svx]
