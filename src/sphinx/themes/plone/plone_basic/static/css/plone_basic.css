@@ -422,11 +422,15 @@ a.internal code {
     text-decoration: none;
 }
 
-a#portal-logo {
+.freshwidget-button a {
+    position: fixed;
+    white-space: nowrap;
+    outline: 0;
     text-decoration: none;
 }
 
-.freshwidget-button a {
+/* Custom for gitter */
+.gitter-open-chat-button a {
     position: fixed;
     white-space: nowrap;
     outline: 0;
