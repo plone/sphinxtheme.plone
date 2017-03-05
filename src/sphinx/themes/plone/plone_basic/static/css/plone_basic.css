@@ -161,6 +161,26 @@ a:visited:hover {
     color: #75ad0a;
 }
 
+a.gitter-open-chat-button,
+a.gitter-open-chat-button:link,
+a.gitter-open-chat-button:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a.gitter-open-chat-button:hover,
+a.gitter-open-chat-button:link:hover,
+a.gitter-open-chat-button:visited:hover {
+    text-decoration: underline;
+}
+
+.gitter-chat-embed {
+    z-index: 2000;
+    background-color: #ffffff;
+    top: 23px
+}
+
 div.breadcrumbs-container {
     margin-bottom: 10px;
 }
@@ -407,6 +427,13 @@ a#portal-logo {
 }
 
 .freshwidget-button a {
+    position: fixed;
+    white-space: nowrap;
+    outline: 0;
+    text-decoration: none;
+}
+
+.gitter-open-chat-button a {
     position: fixed;
     white-space: nowrap;
     outline: 0;
