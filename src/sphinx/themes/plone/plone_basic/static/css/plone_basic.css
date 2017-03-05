@@ -431,6 +431,7 @@ a.internal code {
 
 /* Custom for gitter */
 .gitter-open-chat-button a {
+<<<<<<< HEAD
     position: fixed;
     white-space: nowrap;
     outline: 0;
@@ -438,6 +439,8 @@ a.internal code {
 }
 
 .gitter-open-chat-button a {
+=======
+>>>>>>> f7f8816e001f129b10adb6575e0aa0cc457e1e6d
     position: fixed;
     white-space: nowrap;
     outline: 0;
