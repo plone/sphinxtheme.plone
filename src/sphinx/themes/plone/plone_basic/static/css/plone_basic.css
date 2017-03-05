@@ -248,6 +248,7 @@ div.sidebarwrapper ul {
     margin-top: 0;
 
 }
+
 div.sidebarwrapper ul ul {
     list-style-type: none;
     padding-left: 20px;
@@ -264,6 +265,7 @@ h2 a.headerlink,
 h3 a.headerlink {
     display: none;
 }
+
 h1:hover a.headerlink,
 h2:hover a.headerlink,
 h3:hover a.headerlink {
@@ -422,11 +424,15 @@ a.internal code {
     text-decoration: none;
 }
 
-a#portal-logo {
+.freshwidget-button a {
+    position: fixed;
+    white-space: nowrap;
+    outline: 0;
     text-decoration: none;
 }
 
-.freshwidget-button a {
+/* Custom for gitter */
+.gitter-open-chat-button a {
     position: fixed;
     white-space: nowrap;
     outline: 0;
@@ -475,6 +481,7 @@ a#portal-logo {
         width: 1170px;
     }
 }
+
 .topbar ul{
     margin-right: 2.5em;
     float: right;
@@ -482,9 +489,11 @@ a#portal-logo {
     padding: 0;
     list-style: none;
 }
+
 .topbar ul li{
     float: left;
 }
+
 .topbar a{
     color: #e5e5e5;
     text-decoration: none;
