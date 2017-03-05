@@ -286,7 +286,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 {%- if theme_use_freshdesk %}
 <script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
 <script type="text/javascript">
-    FreshWidget.init("", {"queryString": "&widgetType=popup&formTitle=Feedback&captcha=yes&searchArea=no", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Feedback", "buttonColor": "white", "buttonBg": "#3ea07f", "alignment": "2", "offset": "235px", "formHeight": "500px", "captcha": "yes", "url": "https://plone.freshdesk.com"} );
+    FreshWidget.init("", {"queryString": "&widgetType=popup&captcha=yes&searchArea=no&formTitle=Report a Bug", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Report a Bug", "buttonColor": "white", "buttonBg": "#3ea07f", "alignment": "2", "offset": "235px", "formHeight": "600px", "captcha": "yes", "url": "https://plone.freshdesk.com"} );
++</script>
++{%- endif %}
++
++<!-- Below block includes our gitter widget -->
++{%- if theme_use_gitter %}
++<script>
++  ((window.gitter = {}).chat = {}).options = {
++    room: 'plone/public'
++  };
++</script>
++<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer>
+ </script>
 </script>
 {%- endif %}
 
