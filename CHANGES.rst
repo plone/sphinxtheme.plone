@@ -19,6 +19,7 @@ Changelog
 - Change color of 'support widget' to match with plone.org
 - change links color and underline for accessibility and better visibility [svx,polyester]
 - Add Topbar Header for cross navigation [svx,loechel]
+- Fix Accessibility Issue with title tags in Topbar [loechel]
 
 0.1.1 (26/06/2014)
 ------------------
