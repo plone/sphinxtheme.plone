@@ -439,13 +439,6 @@ a.internal code {
     text-decoration: none;
 }
 
-.gitter-open-chat-button a {
-    position: fixed;
-    white-space: nowrap;
-    outline: 0;
-    text-decoration: none;
-}
-
 /* Custom for Plone Header Bar */
 .topbar{
     font-size: 11px;
