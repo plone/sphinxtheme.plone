@@ -85,6 +85,8 @@ header form#rtd-search-form {
 .guilabel, .menuselection {
     background-color: #fff493;
     font-family: sans-serif;
+	font-weight: bold;
+	color: #0083BE;
 }
 
 @media(max-width: 768px) {

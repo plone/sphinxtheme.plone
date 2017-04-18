@@ -21,7 +21,8 @@ Changelog
 - Add Topbar Header for cross navigation [svx,loechel]
 - Fix Accessibility Issue with title tags in Topbar [loechel]
 - Added gitter chat button [svx,loechel]
-- fix color schema to let ploneorg5 theme match the release plone.org for Plone Verison 5 [loechel]
+- Fix color schema to let ploneorg5 theme match the release plone.org for Plone Verison 5 [loechel]
+- Update color and font-weight for :guilabel:
 
 0.1.1 (26/06/2014)
 ------------------
