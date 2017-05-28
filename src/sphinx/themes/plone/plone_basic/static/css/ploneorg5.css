@@ -88,3 +88,10 @@ aside a:link,
 aside a:visited {
     color: #086ca3;
 }
+
+div.admonition,
+div.admonition-description {
+    background-color: #d5e7f1;
+    border-color: #DEDEDE;
+    color: #086ca3;
+}
