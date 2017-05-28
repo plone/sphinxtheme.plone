@@ -3,7 +3,7 @@ div.admonition {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    background: no-repeat scroll 10px 8px #DDDDDD;
+    background: no-repeat scroll 10px 8px #F6F6F6;
     border-color: #CCCCCC;
     border-image: none;
     border-style: solid none;
@@ -125,7 +125,7 @@ div.admonition-description {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    background: no-repeat scroll 10px 8px #DDDDDD;
+    background: no-repeat scroll 10px 8px #F6F6F6;
     border-color: #CCCCCC;
     border-image: none;
     border-style: solid none;
