@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
-version = '0.2.0.dev1'
+version = '0.3.0.dev1'
 
 setup(
-    name='sphinx.themes.plone',
+    name='sphinxtheme.plone',
     version=version,
     use_2to3=True,
     description="Collection of Sphinx Themes for Plone Documentations",
@@ -12,7 +12,9 @@ setup(
     # http://pypi.python.org/pypi?:action=list_classifiers
     classifiers=[
         'Programming Language :: Python :: 2.7',
-        'Framework :: Plone',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Framework :: Sphinx',
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Topic :: Software Development :: Documentation',
@@ -26,11 +28,11 @@ setup(
     author_email='plone-developers@lists.sourceforge.net',
     maintainer='Alexander Loechel on behalf of Plone Foundation',
     maintainer_email='Alexander.Loechel@lmu.de',
-    url='https://github.com/plone/sphinx.themes.plone.git',
+    url='https://github.com/plone/sphinxtheme.plone.git',
     license='GPL',
     packages=find_packages('src', exclude=['ez_setup']),
     package_dir={'': 'src'},
-    namespace_packages=['sphinx', 'sphinx.themes'],
+    namespace_packages=['sphinxtheme'],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
