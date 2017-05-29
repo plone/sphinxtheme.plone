@@ -23,6 +23,7 @@ Changelog
 - Added gitter chat button [svx,loechel]
 - Fix color schema to let ploneorg5 theme match the release plone.org for Plone Verison 5 [loechel]
 - Update color and font-weight for :guilabel:
+- Update colors for ammondation on new ploneorg5 theme [loechel]
 
 0.1.1 (26/06/2014)
 ------------------
