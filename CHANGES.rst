@@ -20,6 +20,7 @@ Changelog
 - change links color and underline for accessibility and better visibility [svx,polyester]
 - Add Topbar Header for cross navigation [svx,loechel]
 - Fix Accessibility Issue with title tags in Topbar [loechel]
+- Change ammodation color schema [loechel]
 
 0.1.1 (26/06/2014)
 ------------------
