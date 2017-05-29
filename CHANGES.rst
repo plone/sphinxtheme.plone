@@ -4,6 +4,8 @@ Changelog
 
 0.2.0 (unreleased)
 ------------------
+
+- Rename Package to fix namespaceclashes [loechel]
 - Add variable for selected_version in the version dropdown/switcher [polyester]
 - Hide language switcher [polyester]
 - Added Documentation [loechel]
