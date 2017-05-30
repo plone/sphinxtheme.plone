@@ -11,7 +11,7 @@ It might be used for all Plone Package Documentations, or even private usecase b
 Features
 --------
 
-- sphinx.themes.plone comes with own themes for
+- sphinxtheme.plone comes with own themes for
 
   * Plone Classic (Plone 2.0-3.3 Design)
   * Plone Sunburst (Plone 4 Design)
