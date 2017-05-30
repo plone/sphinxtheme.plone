@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '0.3.2.dev0'
+version = '0.4.0.dev0'
 
 setup(
     name='sphinxtheme.plone',
@@ -46,7 +46,7 @@ setup(
     ],
     extras_require={
         'release': [
-            'zest.releaser',
+            'zest.releaser[recommended]',
         ],
     },
     entry_points="""

@@ -2,17 +2,10 @@ Changelog
 =========
 
 
-0.3.2 (unreleased)
+0.4.0 (unreleased)
 ------------------
 
 - Nothing changed yet.
-
-
-0.3.1 (2017-05-30)
-------------------
-
-- Nothing changed yet.
-
 
 0.3.0 (2017-05-30)
 ------------------
