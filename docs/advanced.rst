@@ -3,9 +3,9 @@
 .. _docs.plone.org: http://docs.plone.org
 .. _Bootstrap: http://bootstrap.org
 
-=====================================
-Advanced Usage on sphinx.themes.plone
-=====================================
+===================================
+Advanced Usage on sphinxtheme.plone
+===================================
 
 ---------------------
 General Configuration
@@ -207,7 +207,7 @@ Field-Type:
 Possible / Useful Values:
   ``True`` / ``False``
 
-Default: 
+Default:
   ``True``
 
 
@@ -343,7 +343,7 @@ Default
 
 .. _favicon:
 
-favicon 
+favicon
 -------
 
 Field-Type:
@@ -368,10 +368,10 @@ Use and include Google Analytics code which is modified by the following keyword
   - googleanalytics_domain
   - googleanalytics_path
 
-Possible Values: 
+Possible Values:
   True / False
 
-Default: 
+Default:
   ``False``
 
 
@@ -481,6 +481,3 @@ important static ressources to overwrite
   * dialog-topic.png
   * dialog-warning.png
   * external.png
-
-
-

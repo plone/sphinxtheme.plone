@@ -3,11 +3,11 @@
 .. _Plone: http://plone.org
 .. _docs.plone.org: http://docs.plone.org
 
-Usage of sphinx.themes.plone
-============================
+Usage of sphinxtheme.plone
+==========================
 
 The three steps for use sphinx.themes.plone ist to install it,
-configure your `Sphinx`_ documentation to use it 
+configure your `Sphinx`_ documentation to use it
 and adjust the theme config to fulfill your needs.
 
 
@@ -18,7 +18,7 @@ Install sphinx.themes.plone with pip
 
 .. code:: python
 
-    pip install sphinx.themes.plone
+    pip install sphinxtheme.plone
 
 Install sphinx.themes.plone with buildout
 
@@ -32,10 +32,10 @@ Install sphinx.themes.plone with buildout
     recipe=zc.recipe.egg
     eggs=
         Sphinx
-        sphinx.themes.plone
+        sphinxtheme.plone
 
 .. CAUTION::
-    *You should never use a checkout of the theme package for just appling a theme to your documentations.*
+    *You should never use a checkout of the theme package for applying a theme to your documentations.*
     Never touch this package to adjust configuration or customize parts, there is no need for that.
 
 Basic Configuration
@@ -43,17 +43,17 @@ Basic Configuration
 
 Configure your `Sphinx`_ based Documentation as described by http://sphinx-doc.org/config.html
 
-For just using one of the sphinx.themes.plone designs edit the "conf.py" configuration file to point to the plone themes
+For just using one of the sphinxtheme.plone designs edit the "conf.py" configuration file to point to the plone themes
 
 .. code-block:: python
 
     # At the top.
-    import sphinx.themes.plone
+    import sphinxtheme.plone
 
     ...
 
     # Activate the theme path:
-    html_theme_path = sphinx.themes.plone.get_html_theme_path()
+    html_theme_path = sphinxtheme.plone.get_html_theme_path()
 
     # Activate the theme like this:
     html_theme = 'plone_org_4'
