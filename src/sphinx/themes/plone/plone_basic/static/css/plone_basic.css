@@ -39,6 +39,7 @@ section {
     padding: 0;
     width: 1px;
 }
+
 div#topbar.navbar {
     margin-bottom: 0;
     /*height:23px;*/
@@ -48,7 +49,6 @@ div#topbar.navbar {
 header {
     height: auto;
 }
-
 
 header a {
     /*
@@ -85,6 +85,8 @@ header form#rtd-search-form {
 .guilabel, .menuselection {
     background-color: #fff493;
     font-family: sans-serif;
+	font-weight: bold;
+	color: #0083BE;
 }
 
 @media(max-width: 768px) {
@@ -248,6 +250,7 @@ div.sidebarwrapper ul {
     margin-top: 0;
 
 }
+
 div.sidebarwrapper ul ul {
     list-style-type: none;
     padding-left: 20px;
@@ -264,6 +267,7 @@ h2 a.headerlink,
 h3 a.headerlink {
     display: none;
 }
+
 h1:hover a.headerlink,
 h2:hover a.headerlink,
 h3:hover a.headerlink {
@@ -422,10 +426,6 @@ a.internal code {
     text-decoration: none;
 }
 
-a#portal-logo {
-    text-decoration: none;
-}
-
 .freshwidget-button a {
     position: fixed;
     white-space: nowrap;
@@ -433,6 +433,7 @@ a#portal-logo {
     text-decoration: none;
 }
 
+/* Custom for gitter */
 .gitter-open-chat-button a {
     position: fixed;
     white-space: nowrap;
@@ -475,6 +476,7 @@ a#portal-logo {
         width: 1170px;
     }
 }
+
 .topbar ul{
     margin-right: 2.5em;
     float: right;
@@ -482,9 +484,11 @@ a#portal-logo {
     padding: 0;
     list-style: none;
 }
+
 .topbar ul li{
     float: left;
 }
+
 .topbar a{
     color: #e5e5e5;
     text-decoration: none;
