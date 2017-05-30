@@ -19,6 +19,6 @@ matrix:
 install:
     - pip install tox coveralls coverage
 script:
-    - tox -e $ENVIRON-$THEME
+    - tox -e "$ENVIRON-$THEME"
 notifications:
     email: false
