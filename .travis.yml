@@ -7,8 +7,8 @@ python:
     - 3.6
     - pypy-5.4
 env:
-    - THEME=plone_org_4,plone_org_5,plone_barceloneta,plone_classic,plone_sunburst
-    - ENVIRON=py
+#    - THEME=plone_org_4,plone_org_5,plone_barceloneta,plone_classic,plone_sunburst
+    - ENVIRON=py27,py34,py35,py36,pypy
     - ENVIRON=isort,flake8
 matrix:
     exclude:
@@ -19,6 +19,6 @@ matrix:
 install:
     - pip install tox coveralls coverage
 script:
-    - tox -e "$ENVIRON-$THEME"
+    - tox -e "$ENVIRON"
 notifications:
     email: false
