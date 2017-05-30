@@ -11,11 +11,13 @@ setup(
     # Get more strings from
     # http://pypi.python.org/pypi?:action=list_classifiers
     classifiers=[
+        'Framework :: Sphinx',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-        'Framework :: Sphinx',
+        'Programming Language :: Python :: Implementation :: CPython',
+        'Programming Language :: Python :: Implementation :: PyPy',
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Topic :: Software Development :: Documentation',
         'Operating System :: OS Independent',
@@ -23,7 +25,7 @@ setup(
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
     ],
-    keywords='sphinx plone themes',
+    keywords='sphinxtheme sphinx plone themes',
     author='Alexander Loechel on behalf of Plone Foundation',
     author_email='plone-developers@lists.sourceforge.net',
     maintainer='Alexander Loechel on behalf of Plone Foundation',
