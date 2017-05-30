@@ -44,6 +44,11 @@ setup(
         'docutils',
         'Pygments',
     ],
+    extras_require={
+        'release': [
+            'zest.releaser',
+        ],
+    },
     entry_points="""
     # -*- Entry points: -*-
     """,
