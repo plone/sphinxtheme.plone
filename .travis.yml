@@ -6,19 +6,27 @@ python:
     - 3.5
     - 3.6
     - pypy-5.4
-env:
-    - ENVIRON=plone_org_4,plone_org_5,plone_barceloneta,plone_classic,plone_sunburst
-#    - ENVIRON=py27,py34,py35,py36,pypy
-    - ENVIRON=isort,flake8
+
 matrix:
-    exclude:
-        - env: ENVIRON=isort,flake8
     include:
+        - python: "2.7"
+          env: TOXENV=py27-plone_org_4,py27-plone_org_5,py27-plone_barceloneta,py27-plone_classic,py27-plone_sunburst
+        - python: "3.4"
+          env: TOXENV=py34-plone_org_4,py34-plone_org_5,py34-plone_barceloneta,py34-plone_classic,py34-plone_sunburst
+        - python: "3.5"
+          env: TOXENV=py35-plone_org_4,py35-plone_org_5,py35-plone_barceloneta,py35-plone_classic,py35-plone_sunburst
         - python: "3.6"
-          env: ENVIRON=isort,flake8
+          env: TOXENV=py36-plone_org_4,py36-plone_org_5,py36-plone_barceloneta,py36-plone_classic,py36-plone_sunburst,isort,flake8
+        - python: "pypy"
+          env: TOXENV=pypy-plone_org_4,pypy-plone_org_5,pypy-plone_barceloneta,pypy-plone_classic,pypy-plone_sunburst
 install:
-    - pip install tox coveralls coverage
+    - travis_retry pip install tox coveralls coverage
 script:
-    - tox -e "$ENVIRON"
+    - travis_retry tox
+
+cache:
+    directory:
+        - $HOME/.cache/pip
+
 notifications:
     email: false
