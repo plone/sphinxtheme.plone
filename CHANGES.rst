@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.2.0 (unreleased)
+0.3.0 (2017-05-30)
 ------------------
 
 - Rename Package to fix namespaceclashes [loechel]
