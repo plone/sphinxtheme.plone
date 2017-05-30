@@ -1,11 +1,5 @@
 language: python
 sudo: false
-python:
-    - 2.7
-    - 3.4
-    - 3.5
-    - 3.6
-    - pypy-5.4
 
 matrix:
     include:
@@ -19,8 +13,10 @@ matrix:
           env: TOXENV=py36-plone_org_4,py36-plone_org_5,py36-plone_barceloneta,py36-plone_classic,py36-plone_sunburst,isort,flake8
         - python: "pypy"
           env: TOXENV=pypy-plone_org_4,pypy-plone_org_5,pypy-plone_barceloneta,pypy-plone_classic,pypy-plone_sunburst
+
 install:
     - travis_retry pip install tox coveralls coverage
+
 script:
     - travis_retry tox
 
