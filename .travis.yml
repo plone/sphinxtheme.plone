@@ -9,10 +9,9 @@ matrix:
         - python: "3.4"
           env: TOXENV=py34-plone_org_4,py34-plone_org_5,py34-plone_classic
         - python: "3.5"
-          env: TOXENV=py35-plone_org_4,py35-plone_org_5,,py35-plone_classic
+          env: TOXENV=py35-plone_org_4,py35-plone_org_5,py35-plone_classic
         - python: "3.6"
-          env: TOXENV=py36-plone_org_4,py36-plone_org_5,py36-plone_classic
-          env: TOXENV=isort,flake8
+          env: TOXENV=py36-plone_org_4,py36-plone_org_5,py36-plone_classic,isort,flake8
         - python: "pypy"
           env: TOXENV=pypy-plone_org_4,pypy-plone_org_5,pypy-plone_classic
 
