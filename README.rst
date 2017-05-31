@@ -5,7 +5,7 @@ Sphinx Themes for Plone Documentation
 sphinx.themes.plone is a collection of `Sphinx`_ themes for the `Plone`_ documentation project.
 
 The different themes are used on `docs.plone.org`_, but are not limited for this purpose.
-It might be used for all Plone Package Documentations, or even private usecase but than without the Plone Logo and Footer (respect the License).
+It might be used for all Plone Package Documentations, or even private use case but than without the Plone Logo and Footer (respect the License).
 
 
 Features
@@ -22,7 +22,10 @@ Features
 Installation
 ------------
 
-Install sphinx.themes.plone with buildout::
+buildout
+........
+
+Install sphinxtheme.plone with buildout::
 
     [buildout]
     parts=
@@ -32,12 +35,24 @@ Install sphinx.themes.plone with buildout::
     recipe=zc.recipe.egg
     eggs=
         Sphinx
-        sphinx.themes.plone
+        sphinxtheme.plone
+
+pip install
+...........
+
+Install sphinxtheme.plone with pip:
+
+    pip install Sphinx sphinxtheme.plone
+
+or add it to a requirements.txt and run
+
+    pip install -r requirements.txt
 
 .. CAUTION::
 
-    *You should never use a checkout of the theme package for just appling a theme to your documentations.*
-    Never touch this package to adjust configuration or customize parts, there is no need for that. Read the documentation please: http://docs.plone.org/...
+    *You should never use a checkout of the theme package for applying a theme to your documentations.*
+    Never touch this package to adjust configuration or customize parts, there is no need for that.
+    Read the documentation please: http://docs.plone.org/...
 
 Configuration
 -------------
@@ -45,17 +60,18 @@ Configuration
 Edit the "conf.py" configuration file to point to the plone themes::
 
     # At the top.
-    import sphinx.themes.plone
+    import sphinxtheme.plone
 
     # ...
 
     # Activate the theme path:
-    html_theme_path = sphinx.themes.plone.get_html_theme_path()
+    html_theme_path = sphinxtheme.plone.get_html_theme_path()
 
     # Activate the theme like this:
     html_theme = 'plone_org_4'
 
-Additional switches for the theme, see detailed documentation. For the current docs.plone.org, **always** set the following (this should be done in the conf.py of the related papyrus branch):
+Additional switches for the theme, see detailed documentation.
+For the current docs.plone.org, **always** set the following (this should be done in the conf.py of the related papyrus branch):
 
 always_show_version_switcher = True
 always_show_language_switcher = True
