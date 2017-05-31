@@ -2,14 +2,14 @@
 Sphinx Themes for Plone Documentation
 ======================================
 
-sphinx.themes.plone is a collection of `Sphinx`_ themes for the `Plone`_ documentation project.
+sphinx.themes.plone is a collection of `Sphinx <http://sphinx-doc.org/>`_ themes for the `Plone <http://plone.org>`_ documentation project.
 
-The different themes are used on `docs.plone.org`_, but are not limited for this purpose.
+The different themes are used on `docs.plone.org <https://docs.plone.org/>`_, but are not limited for this purpose.
 It might be used for all Plone Package Documentations, or even private use case but than without the Plone Logo and Footer (respect the License).
 
 
 Features
---------
+========
 
 - sphinxtheme.plone comes with own themes for
 
@@ -20,10 +20,10 @@ Features
   * Plone Org 5 (Generation of Plone 5)
 
 Installation
-------------
+============
 
 buildout
-........
+--------
 
 Install sphinxtheme.plone with buildout::
 
@@ -38,7 +38,7 @@ Install sphinxtheme.plone with buildout::
         sphinxtheme.plone
 
 pip install
-...........
+-----------
 
 Install sphinxtheme.plone with pip:
 
@@ -55,7 +55,7 @@ or add it to a requirements.txt and run
     Read the documentation please: http://docs.plone.org/...
 
 Configuration
--------------
+=============
 
 Edit the "conf.py" configuration file to point to the plone themes::
 
@@ -78,16 +78,16 @@ always_show_language_switcher = True
 selected_version = *the version of the docs that should come preselected in the dropdown, so 5, 4 or 3*
 
 Available Themes
-----------------
+================
 
 - plone_classic
-- plone_sunburst
-- plone_barceloneta (TODO: to be implemented)
 - plone_org_4
 - plone_org_5 (TODO: to be finalized)
+- plone_sunburst (TODO: to be finalized)
+- plone_barceloneta (TODO: to be implemented)
 
 Contribute
-----------
+==========
 
 - Issue Tracker: https://github.com/plone/sphinx.themes.plone/issues
 - Source Code: https://github.com/plone/sphinx.themes.plone
@@ -95,14 +95,10 @@ Contribute
 .. _licence:
 
 License
--------
+=======
 
 * The technical parts of this project is licensed under the GPLv2 license.
 * The text and illustrations in this package / generated pages are licensed by the Plone Foundation under a Creative Commons Attribution 4.0 International license.
 * Plone and the Plone :sup:`®` logo are registered trademarks of the Plone Foundation, registered in the United States and other countries.
 * For guidelines on the permitted uses of the Plone trademarks, see https://plone.org/foundation/logo
 * All other trademarks are owned by their respective owners.
-
-.. _Sphinx: http://sphinx-doc.org/
-.. _Plone: http://plone.org
-.. _docs.plone.org: http://docs.plone.org
