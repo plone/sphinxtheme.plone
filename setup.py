@@ -45,9 +45,6 @@ setup(
         'Pygments',
     ],
     extras_require={
-        'release': [
-            'zest.releaser[recommended]',
-        ],
     },
     entry_points="""
     # -*- Entry points: -*-
