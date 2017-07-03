@@ -5,20 +5,24 @@ Changelog
 0.5.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Design Update for PloneOrg5 Design to match Plone Org [loechel]
+- Update colors for ammondation on new ploneorg5 theme [loechel]
+- Added gitter chat button [svx,loechel]
+- Fix color schema to let ploneorg5 theme match the release plone.org for Plone Verison 5 [loechel]
+- Update color and font-weight for :guilabel:
 
 
 0.4.0 (2017-07-03)
 ------------------
 
-- Fix Release
+- Fix Release [loechel]
 
 
 0.3.1 (2017-07-03)
 ------------------
 
-- finalized remane of the packages
-- Styling for topic
+- finalized remane of the packages [loechel]
+- Styling for topic [loechel]
 
 0.3.0 (2017-05-30)
 ------------------

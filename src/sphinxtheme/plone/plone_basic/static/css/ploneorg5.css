@@ -1,14 +1,9 @@
 @import url('plone_basic.css');
 
 header {
-    border-top-width: 11px;
-    border-top-style: solid;
-    border-top-color: linear-gradient(to bottom, #333333 0%, #101010 100%);
-
-    background-color: #3094C8;
-    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 14%, rgba(0, 0, 0, 0) 14%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 64%, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0));
+    background-color: #007eb6;
     background-size: 18px 18px;
-    margin-bottom: 1em;
+    margin-bottom: 0;
 }
 
 header a span {
@@ -16,8 +11,12 @@ header a span {
     font-size: 24px;
 }
 
+header a#portal-logo img {
+  margin-bottom: 0.25em;
+}
+
 footer#colophon {
-    background: none repeat scroll 0 0 #3C9ACB;
+    background: none repeat scroll 0 0 #1f1238;
     box-shadow: 0 3px 12px -12px rgba(0, 0, 0, 0.5) inset;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -25,32 +24,74 @@ footer#colophon {
 }
 
 footer#doormat {
-    background-color: #EAF2F6;
+    background-color: #113156;
     box-shadow: 0 3px 12px -12px rgba(0, 0, 0, 0.5) inset;
     background-size: 18px 18px;
 }
 
-footer#doormat nav {
-    color: #205C90;
+footer#doormat nav,
+footer#doormat nav div {
+    color: #dfe6ec;
 }
 
 footer#doormat nav a {
     font-size: 12px;
-    color: #205C90;
+    color: #dfe6ec;
+    text-decoration: none;
 }
 
-div.breadcrumbs-container div.container {
-    background: none repeat scroll 0 0 #f6f6f6;
+footer#doormat li {
+    margin-top: 0.5em;
+}
+
+div.breadcrumbs-container {
+    background: none repeat scroll 0 0 #d5e7f1;
     border: 1px solid #eeeeee;
     background-repeat: no-repeat;
     border-color: #DEDEDE;
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
+    color: #086ca3;
+}
+
+div.breadcrumbs-container#breadcrumbs-bottom {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+div.breadcrumbs-container#breadcrumbs-top {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+div.breadcrumbs-container div.container {
+  background: transparent;
+  border: none;
+}
+
+div.breadcrumbs-container a {
+    color: #086ca3;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 aside {
-    background-color: #F6F6F6;
+    background-color: #d5e7f1;
     border: 1px solid #DEDEDE;
     border-radius: 5px;
+    color: #086ca3;
+}
+
+aside a,
+aside a:link,
+aside a:visited {
+    color: #086ca3;
+}
+
+div.admonition,
+div.admonition-description {
+    background-color: #d5e7f1;
+    border-color: #DEDEDE;
+    color: #086ca3;
 }
