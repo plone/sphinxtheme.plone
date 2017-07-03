@@ -3,36 +3,70 @@ sudo: false
 
 env:
   - py27-plone_org4
+    python: "2.7"
+      env:  TOXENV=py27-plone_org_4
   - py27-plone_org5
+    python: "2.7"
+      env:  TOXENV=py27-plone_org_5
   - py27-plone_classic
+    python: "2.7"
+      env:  TOXENV=py27-plone_classic
   - py34-plone_org_4
+    python: "3.4"
+      env:  TOXENV=py3.4-plone_org_4
   - py34-plone_org_5
+    python: "3.4"
+      env:  TOXENV=py3.4-plone_org_5
   - py34-plone_classic
+    python: "3.4"
+      env:  TOXENV=py3.4-plone_classic
   - py35-plone_org_4
+    python: "3.5"
+      env:  TOXENV=py35-plone_org_4
   - py35-plone_org_5
+    python: "3.5"
+      env:  TOXENV=py35-plone_org_5
   - py35-plone_classic
+    python: "3.5"
+      env:  TOXENV=py35-plone_classic
   - py36-plone_org_4
+    python: "3.6"
+      env:  TOXENV=py36-plone_org_4
   - py36-plone_org_5
+    python: "3.6"
+      env:  TOXENV=py36-plone_org_5
   - py36-plone_classic
+    python: "3.6"
+      env:  TOXENV=py36-plone_classic
   - pypy-plone_org_4
+    python: "pypy"
+      env:  TOXENV=pypy-plone_org_4
   - pypy-plone_org_5
+    python: "pypy"
+      env:  TOXENV=pypy-plone_org_5
   - pypy-plone_classic
+    python: "pypy"
+      env:  TOXENV=pypy-plone_classic
   - isort
+    python: "3.6"
+      env:  TOXENV=isort
   - flake8
+    python: "3.6"
+      env:  TOXENV=flake8
 
-matrix:
-    include:
-        # pyXX-plone_sunburst,pyXX-plone_barceloneta
-        - python: "2.7"
-          env:  TOXENV=py27-plone_org_4,TOXENV=py27-plone_org_5,py27-plone_classic
-        - python: "3.4"
-          env: TOXENV=py34-plone_org_4,py34-plone_org_5,py34-plone_classic
-        - python: "3.5"
-          env: TOXENV=py35-plone_org_4,py35-plone_org_5,py35-plone_classic
-        - python: "3.6"
-          env: TOXENV=py36-plone_org_4,py36-plone_org_5,py36-plone_classic,isort,flake8
-        - python: "pypy"
-          env: TOXENV=pypy-plone_org_4,pypy-plone_org_5,pypy-plone_classic
+# matrix:
+#     include:
+#         # pyXX-plone_sunburst,pyXX-plone_barceloneta
+#         - python: "2.7"
+#           env:  TOXENV=py27-plone_org_4,py27-plone_org_5,py27-plone_classic
+#         - python: "3.4"
+#           env: TOXENV=py34-plone_org_4,py34-plone_org_5,py34-plone_classic
+#         - python: "3.5"
+#           env: TOXENV=py35-plone_org_4,py35-plone_org_5,py35-plone_classic
+#         - python: "3.6"
+#           env: TOXENV=py36-plone_org_4,py36-plone_org_5,py36-plone_classic,isort,flake8
+#         - python: "pypy"
+#           env: TOXENV=pypy-plone_org_4,pypy-plone_org_5,pypy-plone_classic
 
 install:
     - travis_retry pip install tox coveralls coverage
