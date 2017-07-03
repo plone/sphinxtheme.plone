@@ -109,11 +109,31 @@ html_theme = 'plone_org_5'
 import sphinxtheme.plone
 html_theme_path = sphinxtheme.plone.get_html_theme_path()
 
-
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
+html_theme_options = {
+    # "rightsidebar": "false",
+    'doc_languages': [
+#        {'lang_code': 'en', 'lang_name': 'English'},
+#        {'lang_code': 'de', 'lang_name': 'German'},
+#        {'lang_code': 'it', 'lang_name': 'Italian'},
+#        {'lang_code': 'fr', 'lang_name': 'France'},
+    ],
+    'doc_language': 'en',
+    'searchbox': True,
+    'version_switcher': True,
+    'always_show_version_switcher': True,
+    'language_switcher': False,
+    'always_show_language_switcher': False,
+    'use_freshdesk': True,
+    'use_gitter': True,
+    'use_ga': True,
+    'googleanalytics_id': 'plone',
+    'googleanalytics_path': '/',
+    'external_topbar': True,
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
