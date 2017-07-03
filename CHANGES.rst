@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.5.0 (unreleased)
+0.5.0 (2017-07-03)
 ------------------
 
 - Design Update for PloneOrg5 Design to match Plone Org [loechel]
