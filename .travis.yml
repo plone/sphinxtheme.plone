@@ -148,7 +148,7 @@ matrix:
             - pypy-plone_classic
 
 install:
-    - travis_retry pip install tox coveralls coverage
+    - travis_retry pip install tox
 
 script:
     - travis_retry tox
