@@ -2,10 +2,11 @@ Changelog
 =========
 
 
-0.4.0 (unreleased)
+0.3.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- finalized remane of the packages
+- Styling for topic
 
 0.3.0 (2017-05-30)
 ------------------
