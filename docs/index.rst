@@ -36,6 +36,8 @@ Full Documentation struture
    advanced
    development
    theme_preview
+   documentation_styleguide
+   rst-styleguide
 
 
 ..   HISTORY
