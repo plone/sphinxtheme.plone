@@ -3,7 +3,7 @@ div.admonition {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    background: no-repeat scroll 10px 8px #F6F6F6;
+    background: no-repeat scroll 10px 8px #DDDDDD;
     border-color: #CCCCCC;
     border-image: none;
     border-style: solid none;
@@ -12,7 +12,6 @@ div.admonition {
     min-height: 50px;
 }
 
-div.topic p.topic-title + p,
 div.admonition p.admonition-title + p {
     display: inline;
 }
@@ -54,16 +53,21 @@ div.seealso * {
 }
 
 div.topic {
+    /*used for table of contents*/
+    /*
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    background: none repeat scroll 0 0 #FFF;
+    background: none repeat scroll 0 0 #EEEEEE;
     border-color: #C6C9CB;
     border-image: none;
     border-style: solid none;
     border-width: 2px;
     padding: 10px 20px;
+    */
+    padding: 0;
+    border: none;
 }
 
 div.error {
@@ -121,8 +125,8 @@ div.admonition-description {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    background: no-repeat scroll 10px 8px #F6F6F6;
-    border-color: #DEDEDE;
+    background: no-repeat scroll 10px 8px #DDDDDD;
+    border-color: #CCCCCC;
     border-image: none;
     border-style: solid none;
     border-width: 2px;
@@ -133,12 +137,9 @@ div.admonition-description * {
     color: #444444;
 }
 
-p.topic-title,
 p.admonition-title {
     display: none;
 }
-
-p.topic-title:after,
 p.admonition-title:after {
     content: ":";
 }
