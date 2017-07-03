@@ -20,6 +20,8 @@
 .pydevproject
 bin/
 build/
+include/
+lib/
 develop-eggs/
 downloads/
 eggs/
@@ -29,7 +31,9 @@ dist/
 var/
 .tox/
 .python-version
-
+.Python
+pip-selfcheck.json
+.pip-selfcheck.json
 
 
 # OSX
