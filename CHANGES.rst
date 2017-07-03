@@ -2,8 +2,15 @@ Changelog
 =========
 
 
-0.2.0 (unreleased)
+0.4.0 (unreleased)
 ------------------
+
+- Nothing changed yet.
+
+0.3.0 (2017-05-30)
+------------------
+
+- Rename Package to fix namespaceclashes [loechel]
 - Add variable for selected_version in the version dropdown/switcher [polyester]
 - Hide language switcher [polyester]
 - Added Documentation [loechel]

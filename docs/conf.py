@@ -106,8 +106,8 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #html_theme = 'default'
 html_theme = 'plone_org_5'
-import sphinx.themes.plone
-html_theme_path = sphinx.themes.plone.get_html_theme_path()
+import sphinxtheme.plone
+html_theme_path = sphinxtheme.plone.get_html_theme_path()
 
 
 # Theme options are theme-specific and customize the look and feel of a theme

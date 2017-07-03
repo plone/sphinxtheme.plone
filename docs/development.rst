@@ -1,5 +1,5 @@
-Further Development of sphinx.themes.plone
-==========================================
+Further Development of sphinxtheme.plone
+========================================
 
 Prequistions
 ------------
@@ -12,4 +12,3 @@ Prequistions
 
 Package Release Process
 -----------------------
-
