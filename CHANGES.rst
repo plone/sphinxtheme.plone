@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.1 (unreleased)
+0.5.1 (2017-07-03)
 ------------------
 
 - Fix Styling for topic [loechel]
