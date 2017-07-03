@@ -5,7 +5,7 @@ Changelog
 0.4.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix Release
 
 
 0.3.1 (2017-07-03)
