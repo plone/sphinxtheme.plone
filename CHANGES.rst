@@ -4,7 +4,7 @@ Changelog
 0.5.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix styling for Algolia Search [loechel]
 
 
 0.5.1 (2017-07-03)

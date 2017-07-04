@@ -78,7 +78,7 @@ header form#rtd-search-form {
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
-    line-height: 75px;
+    /*line-height: 75px;*/
     text-align: right;
 }
 
@@ -417,8 +417,20 @@ a.internal code {
 }
 
 /* Tweak Algolia search css */
+.searchbox {
+  width: 80%;
+  height: auto !important;
+}
+
+#algolia-autocomplete-listbox-0,
+.algolia-autocomplete  #algolia-autocomplete-listbox-0.ds-dropdown-menu,
+.algolia-autocomplete  #algolia-autocomplete-listbox-0.ds-dropdown-menu + div {
+  max-width: 1200px;
+  min-width: 800px;
+}
+
 .algolia-autocomplete .algolia-autocomplete-right {
-    line-height: 32px
+    /*line-height: 32px*/
 }
 
 /* Custom for links */
