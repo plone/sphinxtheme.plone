@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.4 (unreleased)
+0.5.4 (2017-07-05)
 ------------------
 
 - Update Bootstrap to 3.3.7 [loechel]
