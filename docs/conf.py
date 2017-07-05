@@ -133,6 +133,7 @@ html_theme_options = {
     'googleanalytics_id': 'plone',
     'googleanalytics_path': '/',
     'external_topbar': True,
+    'contributing_link': 'https://docs.plone.org/',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

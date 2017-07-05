@@ -67,10 +67,10 @@
           </ul>
         </div>
       </div>
-
       {% if next or prev %}
       <div class="rst-buttons col-xs-3" role="navigation" >
         <div role="navigation" aria-label="breadcrumbs navigation">
+
           <ul class="breadcrumb">
           {% if prev %}
             <li><a href="{{ prev.link|e }}" title="{{ prev.title|striptags|e }}"><span class="fa fa-arrow-circle-left"></span> Previous</a></li>
@@ -186,9 +186,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% include "version_warning.html" %}
     {%- endif %}
     <div class="row">
-    <aside class="col-sm-4 col-lg-3 hidden-xs">
-      <div class="aside-toggle"></div>
-      <div class="sidebarwrapper">
+      <div class="col-sm-4 col-lg-3 hidden-xs nopadding">
+      <aside class="sidebarwrapper">
         {# SIDE NAV, TOGGLES ON MOBILE #}
         <nav data-toggle="nav-shift" class="nav-side">
           <div role="navigation" aria-label="navigation">
@@ -201,8 +200,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {% endif %}
           </div>
         </nav>
-      </div>
-    </aside>
+      </aside>
+      {% if theme_contributing_link %}
+      <aside class="call_to_action">
+        <a href="{{ theme_contributing_link|e }}" class="fa fa-pencil-square-o">Contribute</a>
+      </aside>
+      {% endif %}
+    </div>
     <div class="col-xs-12 col-sm-8 col-lg-9 content-column">
       <div class="row visible-xs">
         <div class="col-xs-12" >

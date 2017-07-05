@@ -45,6 +45,9 @@ There are two type of configuration parts in the conf.py of the `Sphinx`_ Docume
   - always_show_version_switcher
   - always_show_language_switcher
   - show_version_warning
+  - 'contributing_link': '$URL'
+  - 'use_gitter': True
+  - 'use_freshdesk': True
 
 
 Sphinx-Keyword Settings
