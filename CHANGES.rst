@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.3 (unreleased)
+0.5.3 (2017-07-05)
 ------------------
 
 - Contribute_link option added - A Button below Nav [loechel,svx]
