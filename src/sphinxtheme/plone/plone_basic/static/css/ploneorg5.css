@@ -43,6 +43,9 @@ footer#doormat nav a {
 footer#doormat li {
     margin-top: 0.5em;
 }
+div.doormat-header {
+    font-weight:  bold;
+}
 
 div.breadcrumbs-container {
     background: none repeat scroll 0 0 #d5e7f1;

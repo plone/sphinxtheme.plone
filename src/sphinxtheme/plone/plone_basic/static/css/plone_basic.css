@@ -135,8 +135,8 @@ footer#doormat nav {
 
 footer#doormat nav ul {
     list-style-type: none;
-    margin-bottom: 0;
-    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 footer#doormat nav a {
