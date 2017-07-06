@@ -4,7 +4,7 @@ Changelog
 0.5.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add space of 10px between icon and name [svx]
 
 
 0.5.4 (2017-07-05)

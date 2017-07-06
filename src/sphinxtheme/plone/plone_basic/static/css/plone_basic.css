@@ -561,3 +561,7 @@ aside.call_to_action a:hover  {
     background-color: #3ea07f;
     font-weight: bold;
 }
+
+aside.call_to_action .fa-edit::before, .fa-pencil-square-o::before {
+    margin-right: 10px;
+}
