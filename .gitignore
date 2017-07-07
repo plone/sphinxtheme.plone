@@ -20,6 +20,7 @@
 .pydevproject
 bin/
 build/
+_build/
 include/
 lib/
 develop-eggs/
