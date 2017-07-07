@@ -565,3 +565,7 @@ aside.call_to_action a:hover  {
 aside.call_to_action .fa-edit::before, .fa-pencil-square-o::before {
     margin-right: 10px;
 }
+
+div.col-xs-12 nav.nav-top {
+    font-size:  2em;
+}
