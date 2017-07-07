@@ -440,6 +440,22 @@ a.internal code {
   min-width: 800px;
 }
 
+@media (max-width: 992px){#algolia-autocomplete-listbox-0,
+.algolia-autocomplete  #algolia-autocomplete-listbox-0.ds-dropdown-menu,
+.algolia-autocomplete  #algolia-autocomplete-listbox-0.ds-dropdown-menu + div {
+  max-width: 800px;
+  min-width: 600px;
+}
+}
+
+@media (max-width: 768px){#algolia-autocomplete-listbox-0,
+.algolia-autocomplete  #algolia-autocomplete-listbox-0.ds-dropdown-menu,
+.algolia-autocomplete  #algolia-autocomplete-listbox-0.ds-dropdown-menu + div {
+  max-width: 700px;
+  min-width: 500px;
+  position:  relative!important;
+}
+}
 .algolia-autocomplete .algolia-autocomplete-right {
     /*line-height: 32px*/
 }
