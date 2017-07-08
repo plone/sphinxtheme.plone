@@ -22,12 +22,12 @@
 <div class="breadcrumbs-container" id="breadcrumbs-{{name}}">
   <div class="container">
     <div class="row">
-      <div class="col-xs-9">
+      <div class="col-sm-9 hidden-xs">
         <div role="navigation" aria-label="breadcrumbs navigation">
           <ul class="breadcrumb">
             {#<li><a href="https://plone.org">Plone</a></li>#}
             <li class="master">
-              {% if theme_always_show_version_switcher or (theme_version_switcher and version|length > 1) %}
+ <!--             {% if theme_always_show_version_switcher or (theme_version_switcher and version|length > 1) %}
                 <span class="version_switcher">
                   <label for="versionpicker-{{name}}">Version</label>
                   <select id="versionpicker-{{name}}">
@@ -36,7 +36,7 @@
                   {% endfor %}
                   </select>
                 </span>
-              {% endif %}
+              {% endif %} -->
               {% if theme_always_show_language_switcher or (theme_language_switcher and theme_doc_languages|length > 1) %}
                 <span class="lang_switcher">
                   <label for="languagepicker-{{name}}">Language</label>
@@ -68,19 +68,22 @@
         </div>
       </div>
       {% if next or prev %}
-      <div class="rst-buttons col-xs-3" role="navigation" >
+      <div class="rst-buttons col-sm-3 col-xs-12" role="navigation" >
         <div role="navigation" aria-label="breadcrumbs navigation">
 
           <ul class="breadcrumb">
           {% if prev %}
-            <li><a href="{{ prev.link|e }}" title="{{ prev.title|striptags|e }}"><span class="fa fa-arrow-circle-left"></span> Previous</a></li>
+            <li class="breadcrumb-prev"><a href="{{ prev.link|e }}" title="{{ prev.title|striptags|e }}">
+              <i class="fa fa-arrow-circle-left" aria-hidden="true" title="Previous"></i> <span class="sr-only">Previous</span></a></li>
           {% endif %}
           {% if next %}
-            <li><a href="{{ next.link|e }}" title="{{ next.title|striptags|e }}">Next <span class="fa fa-arrow-circle-right"></span></a></li>
+            <li class="breadcrumb-next"><a href="{{ next.link|e }}" title="{{ next.title|striptags|e }}"><span class="sr-only">Next </span><i class="fa fa-arrow-circle-right" aria-hidden="true" title="Next"></i></a></li>
           {% endif %}
           </ul>
         </div>
       </div>
+
+
       {% endif %}
     </div>
   </div>
@@ -206,11 +209,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="{{ theme_contributing_link|e }}" ><i class="fa fa-pencil-square-o"></i>Contribute</a>
       </aside>
       {% endif %}
+
+  {% include "version_buttondropdown.html" %}
+
     </div>
     <div class="col-xs-12 col-sm-8 col-lg-9 content-column">
       <div class="row visible-xs">
         <div class="col-xs-12" >
           {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
+            {% include "version_buttondropdown.html" %}
           <nav class="nav-top" role="navigation" aria-label="top navigation">
             <i data-toggle="nav-top" class="fa fa-bars"></i>
             <a href="{{ pathto(url_root+'sitemap') }}">Table Of Content</a>

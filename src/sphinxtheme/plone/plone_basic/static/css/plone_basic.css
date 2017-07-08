@@ -203,7 +203,7 @@ div.breadcrumbs-container div.container {
 div.breadcrumbs-container li,
 div.breadcrumbs-container a,
 div.breadcrumbs-container .btn {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 div.breadcrumbs-container ul,
@@ -216,6 +216,17 @@ div.breadcrumbs-container ul.breadcrumb {
 
 div.breadcrumbs-container div.rst-buttons ul {
     float: right;
+}
+div.breadcrumbs-container div.rst-buttons.col-sm-3.col-xs-12 ul {
+    float: none;
+}
+
+div.breadcrumbs-container div.rst-buttons.col-sm-3.col-xs-12 ul i.fa {
+    font-size:  2em;
+}
+
+div.breadcrumbs-container div.rst-buttons.col-sm-3.col-xs-12 ul li.breadcrumb-next {
+    float:  right;
 }
 
 div.breadcrumbs-container div.rst-buttons a {
@@ -550,6 +561,7 @@ a.internal code {
 
 .call_to_action {
     margin-top: 2em;
+    margin-bottom:  2em;
     font-size: 16pt;
     padding: 0;
     border-radius: 6px;
