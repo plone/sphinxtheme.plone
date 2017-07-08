@@ -4,6 +4,7 @@ Changelog
 0.5.6 (unreleased)
 ------------------
 
+- start with notes about tox [svx]
 - Change tox build dir to _build [svx]
 - Add new _build dir to .gitignore [svx]
 - Fix css for warning and error boxes [svx]
