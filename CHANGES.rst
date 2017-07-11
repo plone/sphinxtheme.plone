@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.6 (unreleased)
+0.5.6 (2017-07-11)
 ------------------
 
 - start with notes about tox [svx]
