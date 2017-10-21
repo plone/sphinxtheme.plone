@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.7 (unreleased)
+0.5.7 (2017-10-21)
 ------------------
 
 - fix version switcher as button/dropdown [polyester]
