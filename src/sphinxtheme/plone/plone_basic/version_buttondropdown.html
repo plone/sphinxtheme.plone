@@ -1,16 +1,19 @@
- {% if theme_always_show_version_switcher or (theme_version_switcher and version|length > 1) %}
+ {% if theme_always_show_version_switcher or (theme_version_switcher and version_drop|length > 1) %}
 
 
 <div class="dropdown">
-  <button class="btn btn-info btn-lg dropdown-toggle" type="button" id="dropdownversion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  <button class="btn btn-info btn-lg btn-block dropdown-toggle" type="button" id="dropdownversion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Version: {{ theme_selected_version }}
     <span class="caret"></span>
   </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownversion">
 
-                  {% for vers in version %}
+                  {% for vers in theme_version_drop %}
                    <li><a href="https://docs.plone.org/{{vers}}"> Version: {{vers}}</a></li>
                   {% endfor %}
+                  <li role="separator" class="divider"></li>
+    <li><a href="https://docs.plone.org/about/versions">About Plone Documentation versions</a></li>
         </ul>
-        </div>
-      {% endif %}
+ </div>
+
+  {% endif %}

@@ -4,7 +4,7 @@ Changelog
 0.5.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- fix version switcher as button/dropdown [polyester]
 
 
 0.5.6 (2017-07-11)

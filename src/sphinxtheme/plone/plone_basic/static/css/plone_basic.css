@@ -158,6 +158,10 @@ a:link, a:visited {
     text-decoration: underline;
 }
 
+.dropdown-menu>li>a{
+    text-decoration: none;
+}
+
 a:link:hover,
 a:visited:hover {
     color: #75ad0a;
