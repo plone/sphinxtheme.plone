@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '0.5.7.dev0'
+version = '0.5.7'
 
 setup(
     name='sphinxtheme.plone',
