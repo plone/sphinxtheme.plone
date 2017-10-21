@@ -1,2 +1,4 @@
 # Skip tests on not installed python versions
 skip_missing_interperters = False
+
+tox -e release
