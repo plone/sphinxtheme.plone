@@ -4,7 +4,7 @@ Changelog
 0.5.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- explained ini syntax for version switcher. [polyester]
 
 
 0.5.7 (2017-10-21)
