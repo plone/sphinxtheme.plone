@@ -39,3 +39,6 @@ pip-selfcheck.json
 
 # OSX
 .DS_Store
+
+#PyCharm
+.idea

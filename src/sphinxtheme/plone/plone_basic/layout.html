@@ -16,8 +16,6 @@
     "_static/js/bootstrap.min.js",
     "_static/js/version_switch.js"
     ]%}
-
-
 {% macro breadcrumb(name, version_selector=False, lang_selector=False)%}
 <div class="breadcrumbs-container" id="breadcrumbs-{{name}}">
   <div class="container">
@@ -89,13 +87,6 @@
   </div>
 </div>
 {% endmacro %}
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9"  {% if language %} lang="{{language}}" {% else %} lang="en" {% endif %}  > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" {% if language %} lang="{{language}}" {% else %} lang="en" {% endif %} > <!--<![endif]-->
@@ -108,64 +99,58 @@
 
   {# FAVICON #}
   {% if theme_favicon %}
-    <link rel="icon" href="{{ pathto('_static/' + theme_favicon, 1) }}" type="image/x-icon">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ pathto('_static/' + theme_favicon, 1) }}" />
-    <link type="image/x-icon" href="{{ pathto('_static/' + theme_favicon, 1) }}" />
+  <link rel="icon" href="{{ pathto('_static/' + theme_favicon, 1) }}" type="image/x-icon">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ pathto('_static/' + theme_favicon, 1) }}" />
+  <link type="image/x-icon" href="{{ pathto('_static/' + theme_favicon, 1) }}" />
   {% endif %}
 
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KLDW8HG');</script>
-<!-- End Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KLDW8HG');</script>
+  <!-- End Google Tag Manager -->
 
   <script type="text/javascript" src="{{ pathto('_static/jquery.js', 1) }}"></script>
-
   {# OPENSEARCH #}
-  {% if not embedded %}
-    {% if use_opensearch %}
-      <link rel="search" type="application/opensearchdescription+xml" title="{%trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans%}" href="{{ pathto('_static/opensearch.xml', 1) }}"/>
-   {% endif %}
+  {% if not embedded %}{% if use_opensearch %}
+  <link rel="search" type="application/opensearchdescription+xml" title="{%trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans%}" href="{{ pathto('_static/opensearch.xml', 1) }}"/>
+  {% endif %}{% endif %}
 
-  {% endif %}
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   {% for cssfile in css_files %}
-    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
   {% endfor %}
-
   <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+  <!-- -->
 
   {%- block linktags %}
     {%- if hasdoc('about') %}
-        <link rel="author" title="{{ _('About these documents') }}"
-              href="{{ pathto('about') }}"/>
+    <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}"/>
     {%- endif %}
     {%- if hasdoc('genindex') %}
-        <link rel="index" title="{{ _('Index') }}"
-              href="{{ pathto('genindex') }}"/>
+    <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}"/>
     {%- endif %}
     {%- if hasdoc('search') %}
-        <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}"/>
+    <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}"/>
     {%- endif %}
     {%- if hasdoc('copyright') %}
-        <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}"/>
+    <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}"/>
     {%- endif %}
     <link rel="top" title="{{ docstitle|e }}" href="{{ pathto('index') }}"/>
     {%- if parents %}
-        <link rel="up" title="{{ parents[-1].title|striptags|e }}" href="{{ parents[-1].link|e }}"/>
+    <link rel="up" title="{{ parents[-1].title|striptags|e }}" href="{{ parents[-1].link|e }}"/>
     {%- endif %}
     {%- if next %}
-        <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}"/>
+    <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}"/>
     {%- endif %}
     {%- if prev %}
-        <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}"/>
+    <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}"/>
     {%- endif %}
   {%- endblock %}
+  <!-- -->
   {%- block extrahead %} {% endblock %}
-
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
@@ -313,7 +298,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 {%- endif %}
 
 <!-- Below block includes custom search per version -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script type="text/javascript"> docsearch({
   apiKey: '7ab1cfcbe98c5ba873049f48e18ac2a3',
   indexName: 'plone',
