@@ -451,15 +451,18 @@ a.internal code {
   height: auto !important;
 }
 
-@media (max-width: 992px){#algolia-autocomplete-listbox-0,
+#algolia-autocomplete-listbox-0,
 .algolia-autocomplete  #algolia-autocomplete-listbox-0.ds-dropdown-menu,
 .algolia-autocomplete  #algolia-autocomplete-listbox-0.ds-dropdown-menu + div {
   max-width: 800px;
   min-width: 600px;
 }
-}
 
 @media (max-width: 768px){
+header a#portal-logo span {
+    float: right;
+    padding: 9px 0 0 10px;
+}
 .algolia-autocomplete,
 .algolia-autocomplete .ds-input {
     width: 100%;
@@ -502,6 +505,10 @@ a.internal code {
 
 .algolia-autocomplete .algolia-docsearch-suggestion--category-header span.algolia-docsearch-suggestion--highlight {
     display: inline;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column {
+    padding-right: 10px;
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column span {
