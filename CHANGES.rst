@@ -6,6 +6,7 @@ Changelog
 
 - prettify algolia search. [balavec]
 - explained ini syntax for version switcher. [polyester]
+- python versions updated and testes [loechel]
 
 
 0.5.7 (2017-10-21)
