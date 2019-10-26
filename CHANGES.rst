@@ -4,6 +4,7 @@ Changelog
 0.5.8 (unreleased)
 ------------------
 
+- prettify algolia search. [balavec]
 - explained ini syntax for version switcher. [polyester]
 
 
