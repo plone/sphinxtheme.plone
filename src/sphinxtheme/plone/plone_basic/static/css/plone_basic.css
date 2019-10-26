@@ -451,6 +451,11 @@ a.internal code {
   height: auto !important;
 }
 
+header a#portal-logo span {
+    float: right;
+    padding: 9px 0 0 10px;
+}
+
 #algolia-autocomplete-listbox-0,
 .algolia-autocomplete  #algolia-autocomplete-listbox-0.ds-dropdown-menu,
 .algolia-autocomplete  #algolia-autocomplete-listbox-0.ds-dropdown-menu + div {
@@ -459,10 +464,6 @@ a.internal code {
 }
 
 @media (max-width: 768px){
-header a#portal-logo span {
-    float: right;
-    padding: 9px 0 0 10px;
-}
 .algolia-autocomplete,
 .algolia-autocomplete .ds-input {
     width: 100%;
