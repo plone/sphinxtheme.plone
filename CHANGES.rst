@@ -1,12 +1,19 @@
 Changelog
 =========
 
-0.5.8 (unreleased)
+0.5.9 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
+0.5.8 (2019-10-26)
 ------------------
 
 - Reposition "Documentation" on mobile. [balavec]
 - prettify algolia search. [balavec]
 - explained ini syntax for version switcher. [polyester]
+- python versions updated and testes [loechel]
 
 
 0.5.7 (2017-10-21)

@@ -34,6 +34,18 @@ matrix:
           env: TOXENV=pypy-plone_org_5
         - python: "pypy"
           env: TOXENV=pypy-plone_classic
+        - python: "3.7"
+          env: TOXENV=py36-plone_org_4
+        - python: "3.7"
+          env: TOXENV=py36-plone_org_5
+        - python: "3.7"
+          env: TOXENV=py36-plone_classic
+        - python: "3.8"
+          env: TOXENV=py36-plone_org_4
+        - python: "3.8"
+          env: TOXENV=py36-plone_org_5
+        - python: "3.8"
+          env: TOXENV=py36-plone_classic
         - python: "3.6"
           env: TOXENV=isort
         - python: "3.6"

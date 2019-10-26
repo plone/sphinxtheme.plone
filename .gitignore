@@ -35,6 +35,7 @@ var/
 .Python
 pip-selfcheck.json
 .pip-selfcheck.json
+.ropeproject/
 
 
 # OSX
