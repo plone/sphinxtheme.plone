@@ -4,6 +4,7 @@ Changelog
 0.5.8 (unreleased)
 ------------------
 
+- Reposition "Documentation" on mobile. [balavec]
 - prettify algolia search. [balavec]
 - explained ini syntax for version switcher. [polyester]
 
