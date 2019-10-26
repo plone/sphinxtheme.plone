@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.8 (unreleased)
+0.5.8 (2019-10-26)
 ------------------
 
 - prettify algolia search. [balavec]
