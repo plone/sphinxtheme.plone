@@ -3,6 +3,8 @@ sudo: false
 
 matrix:
     include:
+        - python: "3.6"
+          env: TOXENV=isort,flake8
         # pyXX-plone_sunburst,pyXX-plone_barceloneta
         - python: "2.7"
           env: TOXENV=py27-plone_org_4
@@ -28,28 +30,24 @@ matrix:
           env: TOXENV=py36-plone_org_5
         - python: "3.6"
           env: TOXENV=py36-plone_classic
+        - python: "3.7"
+          env: TOXENV=py37-plone_org_4
+        - python: "3.7"
+          env: TOXENV=py37-plone_org_5
+        - python: "3.7"
+          env: TOXENV=py37-plone_classic
+        - python: "3.8"
+          env: TOXENV=py38-plone_org_4
+        - python: "3.8"
+          env: TOXENV=py38-plone_org_5
+        - python: "3.8"
+          env: TOXENV=py38-plone_classic
         - python: "pypy"
           env: TOXENV=pypy-plone_org_4
         - python: "pypy"
           env: TOXENV=pypy-plone_org_5
         - python: "pypy"
           env: TOXENV=pypy-plone_classic
-        - python: "3.7"
-          env: TOXENV=py36-plone_org_4
-        - python: "3.7"
-          env: TOXENV=py36-plone_org_5
-        - python: "3.7"
-          env: TOXENV=py36-plone_classic
-        - python: "3.8"
-          env: TOXENV=py36-plone_org_4
-        - python: "3.8"
-          env: TOXENV=py36-plone_org_5
-        - python: "3.8"
-          env: TOXENV=py36-plone_classic
-        - python: "3.6"
-          env: TOXENV=isort
-        - python: "3.6"
-          env: TOXENV=flake8
 
 install:
     - travis_retry pip install tox
