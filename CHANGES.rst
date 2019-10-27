@@ -4,7 +4,7 @@ Changelog
 0.5.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix Travis setup to actually test Python 3.7/3.8 [loechel]
 
 
 0.5.8 (2019-10-26)
