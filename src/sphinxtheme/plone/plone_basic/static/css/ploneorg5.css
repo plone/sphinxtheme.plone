@@ -1,14 +1,14 @@
-@import url('plone_basic.css');
+@import url("plone_basic.css");
 
 header {
-    background-color: #007eb6;
-    background-size: 18px 18px;
-    margin-bottom: 0;
+  background-color: #007eb6;
+  background-size: 18px 18px;
+  margin-bottom: 0;
 }
 
-header a span {
-    color: #FFF;
-    font-size: 24px;
+header a#portal-logo span {
+  color: #fff;
+  font-size: 24px;
 }
 
 header a#portal-logo img {
@@ -16,56 +16,56 @@ header a#portal-logo img {
 }
 
 footer#colophon {
-    background: none repeat scroll 0 0 #1f1238;
-    box-shadow: 0 3px 12px -12px rgba(0, 0, 0, 0.5) inset;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    color: #FFF;
+  background: none repeat scroll 0 0 #1f1238;
+  box-shadow: 0 3px 12px -12px rgba(0, 0, 0, 0.5) inset;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #fff;
 }
 
 footer#doormat {
-    background-color: #113156;
-    box-shadow: 0 3px 12px -12px rgba(0, 0, 0, 0.5) inset;
-    background-size: 18px 18px;
+  background-color: #113156;
+  box-shadow: 0 3px 12px -12px rgba(0, 0, 0, 0.5) inset;
+  background-size: 18px 18px;
 }
 
 footer#doormat nav,
 footer#doormat nav div {
-    color: #dfe6ec;
+  color: #dfe6ec;
 }
 
 footer#doormat nav a {
-    font-size: 12px;
-    color: #dfe6ec;
-    text-decoration: none;
+  font-size: 12px;
+  color: #dfe6ec;
+  text-decoration: none;
 }
 
 footer#doormat li {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
 div.doormat-header {
-    font-weight:  bold;
+  font-weight: bold;
 }
 
 div.breadcrumbs-container {
-    background: none repeat scroll 0 0 #d5e7f1;
-    border: 1px solid #eeeeee;
-    background-repeat: no-repeat;
-    border-color: #DEDEDE;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    color: #086ca3;
+  background: none repeat scroll 0 0 #d5e7f1;
+  border: 1px solid #eeeeee;
+  background-repeat: no-repeat;
+  border-color: #dedede;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  color: #086ca3;
 }
 
 div.breadcrumbs-container#breadcrumbs-bottom {
-    margin-bottom: 0;
-    margin-top: 10px;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 
 div.breadcrumbs-container#breadcrumbs-top {
-    margin-bottom: 10px;
-    margin-top: 0;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 div.breadcrumbs-container div.container {
@@ -74,27 +74,27 @@ div.breadcrumbs-container div.container {
 }
 
 div.breadcrumbs-container a {
-    color: #086ca3;
-    font-weight: bold;
-    text-decoration: none;
+  color: #086ca3;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 aside {
-    background-color: #d5e7f1;
-    border: 1px solid #DEDEDE;
-    border-radius: 5px;
-    color: #086ca3;
+  background-color: #d5e7f1;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  color: #086ca3;
 }
 
 aside a,
 aside a:link,
 aside a:visited {
-    color: #086ca3;
+  color: #086ca3;
 }
 
 div.admonition,
 div.admonition-description {
-    background-color: #d5e7f1;
-    border-color: #DEDEDE;
-    color: #086ca3;
+  background-color: #d5e7f1;
+  border-color: #dedede;
+  color: #086ca3;
 }
