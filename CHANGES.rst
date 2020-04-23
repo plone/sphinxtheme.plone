@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 - Fix Travis setup to actually test Python 3.7/3.8 [loechel]
+- Algolia search css fix [polyester]
 
 
 0.5.8 (2019-10-26)
