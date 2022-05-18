@@ -104,13 +104,22 @@
   <link type="image/x-icon" href="{{ pathto('_static/' + theme_favicon, 1) }}" />
   {% endif %}
 
-  <!-- Google Tag Manager -->
+  <!-- Google Tag Manager
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-KLDW8HG');</script>
-  <!-- End Google Tag Manager -->
+  End Google Tag Manager -->
+
+  <!-- Matomo Tag Manager -->
+  <script>
+  var _mtm = window._mtm = window._mtm || [];
+  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.async=true; g.src='https://stats.plone.org/js/container_S7dBGmMH.js'; s.parentNode.insertBefore(g,s);
+  </script>
+  <!-- End Matomo Tag Manager -->
 
   <script type="text/javascript" src="{{ pathto('_static/jquery.js', 1) }}"></script>
   {# OPENSEARCH #}

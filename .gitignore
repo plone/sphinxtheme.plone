@@ -11,6 +11,7 @@
 *.swp
 *.wpr
 .*.cfg
+.vscode/
 .installed.cfg
 .mr.developer.cfg
 .hg/
