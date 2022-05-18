@@ -129,7 +129,7 @@ html_theme_options = {
     'always_show_language_switcher': False,
     'use_freshdesk': True,
     'use_gitter': True,
-    'use_ga': True,
+    'use_ga': False,
     'googleanalytics_id': 'plone',
     'googleanalytics_path': '/',
     'external_topbar': True,
