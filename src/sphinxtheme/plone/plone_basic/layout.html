@@ -295,16 +295,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 {%- endif %}
 
-<!-- Below block includes our gitter widget -->
-{%- if theme_use_gitter %}
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-    room: 'plone/public'
-  };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer>
-</script>
-{%- endif %}
+<!-- Below block includes our discord widget -->
+<style>
+  .floating-discord-btn{
+    width: 150px;
+    height: 40px;
+    background: #00a080cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 2.5%;
+    font-size: 12px;
+    position: fixed;
+    right: 30px;
+    bottom: 0px;
+
+    outline: turquoise;
+    border: none;
+    cursor: pointer;
+  }
+
+</style>
+<form>
+  <a href="https://discord.gg/w8e5WCAKGs" target="_blank">
+    <input type="button" value="JOIN CHAT" class="floating-discord-btn">
+  </a>
+</form>
+
 
 <!-- Below block includes custom search per version -->
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
