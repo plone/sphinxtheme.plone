@@ -99,20 +99,16 @@ div.admonition-description {
   color: #086ca3;
 }
 
-a#floating-discord-btn{
-  width: 150px;
-  height: 42px;
+a#floating-discord-btn {
   background: #00a080cb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: white;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  font-size: 12px;
-  position: fixed;
-  right: 13px;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
   bottom: 0px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 1em 3em;
+  position: fixed;
+  right: 10px;
+  text-decoration: none;
 }
