@@ -101,16 +101,18 @@ div.admonition-description {
 
 a#floating-discord-btn{
   width: 150px;
-  height: 40px;
+  height: 42px;
   background: #00a080cb;
   display: flex;
   align-items: center;
   justify-content: center;
+  letter-spacing: 1px;
   text-decoration: none;
   color: white;
-  border-radius: 2.5%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   font-size: 12px;
   position: fixed;
-  right: 30px;
+  right: 13px;
   bottom: 0px;
 }
