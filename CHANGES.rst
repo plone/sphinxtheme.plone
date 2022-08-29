@@ -6,6 +6,7 @@ Changelog
 
 - Fix Travis setup to actually test Python 3.7/3.8 [loechel]
 - Algolia search css fix [polyester]
+- Replaced link for chat button from Gitter to Discord [rohnsha0]
 
 
 0.5.8 (2019-10-26)
