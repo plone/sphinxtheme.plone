@@ -98,7 +98,9 @@ div.admonition-description {
   border-color: #dedede;
   color: #086ca3;
 }
-
+a#floating-discord-btn:hover {
+  background: #006b56;
+}
 a#floating-discord-btn {
   background: #00a080cb;
   border-top-left-radius: 0.5em;
