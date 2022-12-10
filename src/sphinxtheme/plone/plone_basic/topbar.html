@@ -1,26 +1,26 @@
-{% block topbar %}
-{% if theme_external_topbar %}
-<div id="topbar" class="topbar navbar navbar-inverse navbar-static-top hidden-xs">
+{% block topbar %} {% if theme_external_topbar %}
+<div
+  id="topbar"
+  class="topbar navbar navbar-inverse navbar-static-top hidden-xs"
+>
   <div class="topcontainer">
     <ul id="links-select" class="cross-reference">
       <li>
-        <a href="https://plone.org" title="Plone community site">
-          plone.org
-        </a>
+        <a href="https://plone.org" title="Plone community site"> plone.org </a>
       </li>
       <li>
-        <a href="https://plone.com" title="Plone showcase and overview">
-          plone.com
-        </a>
-      </li>
-      <li>
-        <a href="https://training.plone.org" title="Training material about Plone development">
+        <a
+          href="https://training.plone.org"
+          title="Training material about Plone development"
+        >
           training.plone.org
         </a>
       </li>
       <li>
-        <a href="https://docs.plone.org" title="Documentation on Plone CMS and development">
-        <a href="https://docs.plone.org" title="docs.plone.org">
+        <a
+          href="https://docs.plone.org"
+          title="Documentation on Plone CMS and development"
+        >
           docs.plone.org
         </a>
       </li>
@@ -32,5 +32,4 @@
     </ul>
   </div>
 </div>
-{% endif %}
-{% endblock %}
+{% endif %} {% endblock %}
