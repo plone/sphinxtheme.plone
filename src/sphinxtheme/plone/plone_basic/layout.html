@@ -301,16 +301,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Below block includes our discord widget -->
 <a href="https://discord.com/invite/zFY3EBbjaj" id="floating-discord-btn" target="_blank">JOIN CHAT</a>
 
-<!-- Below block includes custom search per version -->
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script type="text/javascript"> docsearch({
-  apiKey: '7ab1cfcbe98c5ba873049f48e18ac2a3',
-  indexName: 'plone',
-  inputSelector: '#rtd-search-form input[name="q"]',
-  algoliaOptions: { 'facetFilters': ["tags:{{ theme_selected_version }}"] },
-  debug: false // Set debug to true if you want to inspect the dropdown
-});
-</script>
+
 {% endblock %}
 
 </body>
