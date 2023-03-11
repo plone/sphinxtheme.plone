@@ -122,12 +122,14 @@
   <!-- End Matomo Tag Manager -->
 
   <script type="text/javascript" src="{{ pathto('_static/jquery.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto('_static/searchtools.js', 1) }}" defer></script>
+  <script type="text/javascript" src="{{ pathto('_static/language_data.js', 1) }}" defer></script>
   {# OPENSEARCH #}
   {% if not embedded %}{% if use_opensearch %}
   <link rel="search" type="application/opensearchdescription+xml" title="{%trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans%}" href="{{ pathto('_static/opensearch.xml', 1) }}"/>
   {% endif %}{% endif %}
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />-->
   {% for cssfile in css_files %}
   <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
   {% endfor %}
