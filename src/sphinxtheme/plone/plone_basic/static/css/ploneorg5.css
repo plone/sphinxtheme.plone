@@ -114,3 +114,9 @@ a#floating-discord-btn {
   right: 10px;
   text-decoration: none;
 }
+div.version_warning {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1001;
+}
