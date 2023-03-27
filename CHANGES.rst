@@ -9,6 +9,7 @@ Changelog
 - Replaced link for chat button from Gitter to Discord [rohnsha0]
 - Changed broken link in Discord btn [rohnsha0]
 - Adapt links and version chooser for Plone 6 [polyester]
+- Add version_warning class to make it sticky for Plone 5.x [stevepiercy]
 
 
 0.5.8 (2019-10-26)
