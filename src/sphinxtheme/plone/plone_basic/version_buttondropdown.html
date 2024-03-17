@@ -10,17 +10,17 @@ theme_version_drop|length > 1) %}
     aria-haspopup="true"
     aria-expanded="true"
   >
-    Version: {{ theme_selected_version }}
+  {% trans %}Version:{% endtrans %} {{ theme_selected_version }}
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownversion">
     {% for vers in theme_version_drop %}
-    <li><a href="https://{{vers}}.docs.plone.org/"> Version: {{vers}}</a></li>
+    <li><a href="https://{{vers}}.docs.plone.org/"> {% trans %}Version:{% endtrans %} {{vers}}</a></li>
     {% endfor %}
     <li role="separator" class="divider"></li>
     <li>
       <a href="https://5.docs.plone.org/about/versions.html"
-        >About Plone Documentation versions</a
+        >{% trans %}About Plone Documentation versions{% endtrans %}</a
       >
     </li>
   </ul>

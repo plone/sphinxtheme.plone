@@ -1,3 +1,4 @@
+include babel.cfg
 recursive-include src *
 recursive-include docs *
 include *

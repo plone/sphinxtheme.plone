@@ -1,0 +1,157 @@
+# Translations template for sphinxtheme.plone.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the sphinxtheme.plone
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: sphinxtheme.plone 0.5.9.dev0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-03-17 13:38-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: src/sphinxtheme/plone/plone_basic/header.html:7
+msgid "Website"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/header.html:8
+msgid "Plone"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:30
+msgid "Version"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:40
+msgid "Language"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:48
+msgid "Documentation"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:57
+msgid "Edit on GitHub"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:59
+msgid "Edit on Bitbucket"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:61
+msgid "View page source"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:75
+msgid "Previous"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:78
+msgid "Next"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:130
+#, python-format
+msgid "Search within %(docstitle)s"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:142
+msgid "About these documents"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:145
+msgid "Index"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:148
+msgid "Search"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:151
+msgid "Copyright"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:206
+msgid "Contribute"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:220
+msgid "Table Of Content"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:274
+msgid ""
+"This page uses <a href=\"http://analytics.google.com/\"> Google "
+"Analytics</a> to collect statistics. You can disable it by blocking the "
+"JavaScript coming from www.google-analytics.com."
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:297
+msgid "Report a Bug"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/layout.html:302
+msgid "JOIN CHAT"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/searchbox.html:4
+msgid "Search docs"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/topbar.html:9
+msgid "Plone community site"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/topbar.html:14
+msgid "Training material about Plone development"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/topbar.html:22
+msgid "Documentation on Plone CMS and development"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/topbar.html:28
+msgid "Community forum of Plone"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/version_buttondropdown.html:13
+#: src/sphinxtheme/plone/plone_basic/version_buttondropdown.html:18
+msgid "Version:"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/version_buttondropdown.html:23
+msgid "About Plone Documentation versions"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/versions.html:11
+msgid "Versions"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/versions.html:17
+msgid "Downloads"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/versions.html:23
+msgid "On Read the Docs"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/versions.html:25
+msgid "Project Home"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/versions.html:28
+msgid "Builds"
+msgstr ""
+
+#: src/sphinxtheme/plone/plone_basic/versions.html:32
+msgid "Free document hosting provided by"
+msgstr ""
+

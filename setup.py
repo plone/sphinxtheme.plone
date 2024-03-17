@@ -1,3 +1,7 @@
+try:
+    from babel.messages import frontend as babel
+except ImportError:
+    pass
 from setuptools import setup, find_packages
 
 version = '0.5.9.dev0'
@@ -48,4 +52,10 @@ setup(
     entry_points="""
     # -*- Entry points: -*-
     """,
+    cmdclass = {
+        'compile_catalog': babel.compile_catalog,
+        'extract_messages': babel.extract_messages,
+        'init_catalog': babel.init_catalog,
+        'update_catalog': babel.update_catalog
+    },
 )
