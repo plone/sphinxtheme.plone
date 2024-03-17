@@ -4,6 +4,7 @@ Changelog
 0.5.9 (unreleased)
 ------------------
 
+- Add Spanish translation #80 [macagua]
 - Add the i18n support for this Sphinx theme #80 [macagua]
 - Fix Travis setup to actually test Python 3.7/3.8 [loechel]
 - Algolia search css fix [polyester]
