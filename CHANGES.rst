@@ -4,6 +4,7 @@ Changelog
 0.5.9 (unreleased)
 ------------------
 
+- Add the i18n support for this Sphinx theme #80 [macagua]
 - Fix Travis setup to actually test Python 3.7/3.8 [loechel]
 - Algolia search css fix [polyester]
 - Replaced link for chat button from Gitter to Discord [rohnsha0]
